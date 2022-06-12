@@ -1,0 +1,178 @@
+[
+	{
+		"Id_Articulo": 1,
+		"Id_Categoria": 1,
+		"Id_Modelo": 1,
+		"Id_Marca": 1,
+		"Código_Articulo": 0,
+		"Nombre_Articulo": "Zapato Nike",
+		"Descripcion_Articulo": "Zapato para realizar deportes",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 2,
+		"Id_Categoria": 2,
+		"Id_Modelo": 3,
+		"Id_Marca": 2,
+		"Código_Articulo": 1,
+		"Nombre_Articulo": "Sandalia Rosita",
+		"Descripcion_Articulo": "Sandalia para damas",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 3,
+		"Id_Categoria": 4,
+		"Id_Modelo": 4,
+		"Id_Marca": 3,
+		"Código_Articulo": 2,
+		"Nombre_Articulo": "Zapato Artezano",
+		"Descripcion_Articulo": "Zapato casual para toda ocasion",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": false
+	},
+	{
+		"Id_Articulo": 4,
+		"Id_Categoria": 4,
+		"Id_Modelo": 3,
+		"Id_Marca": 4,
+		"Código_Articulo": 3,
+		"Nombre_Articulo": "Zapato Adidas",
+		"Descripcion_Articulo": "Zapato de corte bajo para dama",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 5,
+		"Id_Categoria": 1,
+		"Id_Modelo": 1,
+		"Id_Marca": 1,
+		"Código_Articulo": 0,
+		"Nombre_Articulo": "Zapato Nike",
+		"Descripcion_Articulo": "Zapato para realizar deportes",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 6,
+		"Id_Categoria": 2,
+		"Id_Modelo": 3,
+		"Id_Marca": 2,
+		"Código_Articulo": 1,
+		"Nombre_Articulo": "Sandalia Rosita",
+		"Descripcion_Articulo": "Sandalia para damas",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 7,
+		"Id_Categoria": 4,
+		"Id_Modelo": 4,
+		"Id_Marca": 3,
+		"Código_Articulo": 2,
+		"Nombre_Articulo": "Zapato Artezano",
+		"Descripcion_Articulo": "Zapato casual para toda ocasion",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": false
+	},
+	{
+		"Id_Articulo": 8,
+		"Id_Categoria": 4,
+		"Id_Modelo": 3,
+		"Id_Marca": 4,
+		"Código_Articulo": 3,
+		"Nombre_Articulo": "Zapato Adidas",
+		"Descripcion_Articulo": "Zapato de corte bajo para dama",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 9,
+		"Id_Categoria": 1,
+		"Id_Modelo": 1,
+		"Id_Marca": 1,
+		"Código_Articulo": 0,
+		"Nombre_Articulo": "Zapato Nike",
+		"Descripcion_Articulo": "Zapato para realizar deportes",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 10,
+		"Id_Categoria": 2,
+		"Id_Modelo": 3,
+		"Id_Marca": 2,
+		"Código_Articulo": 1,
+		"Nombre_Articulo": "Sandalia Rosita",
+		"Descripcion_Articulo": "Sandalia para damas",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 11,
+		"Id_Categoria": 4,
+		"Id_Modelo": 4,
+		"Id_Marca": 3,
+		"Código_Articulo": 2,
+		"Nombre_Articulo": "Zapato Artezano",
+		"Descripcion_Articulo": "Zapato casual para toda ocasion",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": false
+	},
+	{
+		"Id_Articulo": 12,
+		"Id_Categoria": 4,
+		"Id_Modelo": 3,
+		"Id_Marca": 4,
+		"Código_Articulo": 3,
+		"Nombre_Articulo": "Zapato Adidas",
+		"Descripcion_Articulo": "Zapato de corte bajo para dama",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 13,
+		"Id_Categoria": 1,
+		"Id_Modelo": 1,
+		"Id_Marca": 1,
+		"Código_Articulo": 0,
+		"Nombre_Articulo": "Zapato Nike",
+		"Descripcion_Articulo": "Zapato para realizar deportes",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 14,
+		"Id_Categoria": 2,
+		"Id_Modelo": 3,
+		"Id_Marca": 2,
+		"Código_Articulo": 1,
+		"Nombre_Articulo": "Sandalia Rosita",
+		"Descripcion_Articulo": "Sandalia para damas",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	},
+	{
+		"Id_Articulo": 15,
+		"Id_Categoria": 4,
+		"Id_Modelo": 4,
+		"Id_Marca": 3,
+		"Código_Articulo": 2,
+		"Nombre_Articulo": "Zapato Artezano",
+		"Descripcion_Articulo": "Zapato casual para toda ocasion",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": false
+	},
+	{
+		"Id_Articulo": 16,
+		"Id_Categoria": 4,
+		"Id_Modelo": 3,
+		"Id_Marca": 4,
+		"Código_Articulo": 3,
+		"Nombre_Articulo": "Zapato Adidas",
+		"Descripcion_Articulo": "Zapato de corte bajo para dama",
+		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Estado": true
+	}
+]

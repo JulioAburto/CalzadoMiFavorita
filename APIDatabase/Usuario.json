@@ -1,0 +1,122 @@
+[
+	{
+		"Id_Usuario": 1,
+		"Cedula": "041-200198-3000n",
+		"Nombre_Usuario": "Francisco",
+		"Apellido_Usuario": "Rodriguez",
+		"Direccion_Usuario": "Diriamba",
+		"Telefono_Usuario": 0,
+		"Correo": "Francisco@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 2,
+		"Cedula": "041-200198-4000n",
+		"Nombre_Usuario": "Jose",
+		"Apellido_Usuario": "Narvaez",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 11111111,
+		"Correo": "Jose@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 3,
+		"Cedula": "041-200198-5000n",
+		"Nombre_Usuario": "Julio",
+		"Apellido_Usuario": "Aburto",
+		"Direccion_Usuario": "El Rosario",
+		"Telefono_Usuario": 22222222,
+		"Correo": "Julio@example.com",
+		"Id_Rol": 1
+	},
+	{
+		"Id_Usuario": 4,
+		"Cedula": "041-200198-6000n",
+		"Nombre_Usuario": "Cesar",
+		"Apellido_Usuario": "Vado",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 33333333,
+		"Correo": "Cesar@example.com",
+		"Id_Rol": 2
+	},
+	{
+		"Id_Usuario": 5,
+		"Cedula": "041-200198-3000n",
+		"Nombre_Usuario": "Francisco",
+		"Apellido_Usuario": "Rodriguez",
+		"Direccion_Usuario": "Diriamba",
+		"Telefono_Usuario": 0,
+		"Correo": "Francisco@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 6,
+		"Cedula": "041-200198-4000n",
+		"Nombre_Usuario": "Jose",
+		"Apellido_Usuario": "Narvaez",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 11111111,
+		"Correo": "Jose@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 7,
+		"Cedula": "041-200198-5000n",
+		"Nombre_Usuario": "Julio",
+		"Apellido_Usuario": "Aburto",
+		"Direccion_Usuario": "El Rosario",
+		"Telefono_Usuario": 22222222,
+		"Correo": "Julio@example.com",
+		"Id_Rol": 1
+	},
+	{
+		"Id_Usuario": 8,
+		"Cedula": "041-200198-6000n",
+		"Nombre_Usuario": "Cesar",
+		"Apellido_Usuario": "Vado",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 33333333,
+		"Correo": "Cesar@example.com",
+		"Id_Rol": 2
+	},
+	{
+		"Id_Usuario": 9,
+		"Cedula": "041-200198-3000n",
+		"Nombre_Usuario": "Francisco",
+		"Apellido_Usuario": "Rodriguez",
+		"Direccion_Usuario": "Diriamba",
+		"Telefono_Usuario": 0,
+		"Correo": "Francisco@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 10,
+		"Cedula": "041-200198-4000n",
+		"Nombre_Usuario": "Jose",
+		"Apellido_Usuario": "Narvaez",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 11111111,
+		"Correo": "Jose@example.com",
+		"Id_Rol": 3
+	},
+	{
+		"Id_Usuario": 11,
+		"Cedula": "041-200198-5000n",
+		"Nombre_Usuario": "Julio",
+		"Apellido_Usuario": "Aburto",
+		"Direccion_Usuario": "El Rosario",
+		"Telefono_Usuario": 22222222,
+		"Correo": "Julio@example.com",
+		"Id_Rol": 1
+	},
+	{
+		"Id_Usuario": 12,
+		"Cedula": "041-200198-6000n",
+		"Nombre_Usuario": "Cesar",
+		"Apellido_Usuario": "Vado",
+		"Direccion_Usuario": "Jinotepe",
+		"Telefono_Usuario": 33333333,
+		"Correo": "Cesar@example.com",
+		"Id_Rol": 2
+	}
+]

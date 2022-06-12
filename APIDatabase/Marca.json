@@ -1,0 +1,63 @@
+[
+	{
+		"Id_Marca": 1,
+		"Nombre_Marca": "Nike",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 2,
+		"Nombre_Marca": "Artezanas",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 3,
+		"Nombre_Marca": "Elegantes",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 4,
+		"Nombre_Marca": "Artezanos",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 5,
+		"Nombre_Marca": "Nike",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 6,
+		"Nombre_Marca": "Artezanas",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 7,
+		"Nombre_Marca": "Elegantes",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 8,
+		"Nombre_Marca": "Artezanos",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 9,
+		"Nombre_Marca": "Nike",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 10,
+		"Nombre_Marca": "Artezanas",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 11,
+		"Nombre_Marca": "Elegantes",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Marca": 12,
+		"Nombre_Marca": "Artezanos",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	}
+]
+ 

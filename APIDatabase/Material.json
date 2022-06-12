@@ -1,0 +1,62 @@
+[
+	{
+		"Id_Material": 1,
+		"NombreMaterial": "Cuero",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 2,
+		"NombreMaterial": "Tela",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 3,
+		"NombreMaterial": "Hule",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 4,
+		"NombreMaterial": "Gamusa",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 5,
+		"NombreMaterial": "Cuero",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 6,
+		"NombreMaterial": "Tela",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 7,
+		"NombreMaterial": "Hule",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 8,
+		"NombreMaterial": "Gamusa",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 9,
+		"NombreMaterial": "Cuero",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 10,
+		"NombreMaterial": "Tela",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 11,
+		"NombreMaterial": "Hule",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Material": 12,
+		"NombreMaterial": "Gamusa",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	}
+]

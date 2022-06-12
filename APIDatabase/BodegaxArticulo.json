@@ -1,0 +1,62 @@
+[
+	{
+		"Id_BodegaxArticulo": 4,
+		"Id_Bodega": 1,
+		"Id_Articulo": 3
+	},
+	{
+		"Id_BodegaxArticulo": 5,
+		"Id_Bodega": 1,
+		"Id_Articulo": 4
+	},
+	{
+		"Id_BodegaxArticulo": 6,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	},
+	{
+		"Id_BodegaxArticulo": 7,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	},
+	{
+		"Id_BodegaxArticulo": 8,
+		"Id_Bodega": 1,
+		"Id_Articulo": 3
+	},
+	{
+		"Id_BodegaxArticulo": 9,
+		"Id_Bodega": 1,
+		"Id_Articulo": 4
+	},
+	{
+		"Id_BodegaxArticulo": 10,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	},
+	{
+		"Id_BodegaxArticulo": 11,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	},
+	{
+		"Id_BodegaxArticulo": 12,
+		"Id_Bodega": 1,
+		"Id_Articulo": 3
+	},
+	{
+		"Id_BodegaxArticulo": 13,
+		"Id_Bodega": 1,
+		"Id_Articulo": 4
+	},
+	{
+		"Id_BodegaxArticulo": 14,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	},
+	{
+		"Id_BodegaxArticulo": 15,
+		"Id_Bodega": 2,
+		"Id_Articulo": 5
+	}
+]

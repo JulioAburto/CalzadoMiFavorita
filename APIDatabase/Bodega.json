@@ -1,0 +1,34 @@
+[
+   {
+      "Id_Bodega":1,
+      "NombreBodega":"Principal"
+   },
+   {
+      "Id_Bodega":2,
+      "NombreBodega":"Secundaria"
+   },
+   {
+      "Id_Bodega":3,
+      "NombreBodega":"Principal"
+   },
+   {
+      "Id_Bodega":4,
+      "NombreBodega":"Secundaria"
+   },
+   {
+      "Id_Bodega":5,
+      "NombreBodega":"Principal"
+   },
+   {
+      "Id_Bodega":6,
+      "NombreBodega":"Secundaria"
+   },
+   {
+      "Id_Bodega":7,
+      "NombreBodega":"Principal"
+   },
+   {
+      "Id_Bodega":8,
+      "NombreBodega":"Secundaria"
+   }
+]

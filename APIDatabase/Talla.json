@@ -1,0 +1,47 @@
+[
+	{
+		"Id_Talla": 1,
+		"NombreTalla": "Americano",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 2,
+		"NombreTalla": "Europeo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 3,
+		"NombreTalla": "Nacional",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 4,
+		"NombreTalla": "Americano",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 5,
+		"NombreTalla": "Europeo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 6,
+		"NombreTalla": "Nacional",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 7,
+		"NombreTalla": "Americano",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 8,
+		"NombreTalla": "Europeo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Talla": 9,
+		"NombreTalla": "Nacional",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	}
+]

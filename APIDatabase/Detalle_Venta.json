@@ -1,0 +1,58 @@
+[
+	{
+		"Id_DetalleVenta": 3,
+		"Id_Venta": 4,
+		"Id_Articulo": 3,
+		"Precio_Venta": 3500,
+		"Cantidad_Venta": 1
+	},
+	{
+		"Id_DetalleVenta": 4,
+		"Id_Venta": 5,
+		"Id_Articulo": 3,
+		"Precio_Venta": 6000,
+		"Cantidad_Venta": 2
+	},
+	{
+		"Id_DetalleVenta": 5,
+		"Id_Venta": 6,
+		"Id_Articulo": 6,
+		"Precio_Venta": 5000,
+		"Cantidad_Venta": 2
+	},
+	{
+		"Id_DetalleVenta": 6,
+		"Id_Venta": 7,
+		"Id_Articulo": 4,
+		"Precio_Venta": 2500,
+		"Cantidad_Venta": 1
+	},
+	{
+		"Id_DetalleVenta": 7,
+		"Id_Venta": 4,
+		"Id_Articulo": 3,
+		"Precio_Venta": 3500,
+		"Cantidad_Venta": 1
+	},
+	{
+		"Id_DetalleVenta": 8,
+		"Id_Venta": 5,
+		"Id_Articulo": 3,
+		"Precio_Venta": 6000,
+		"Cantidad_Venta": 2
+	},
+	{
+		"Id_DetalleVenta": 9,
+		"Id_Venta": 6,
+		"Id_Articulo": 6,
+		"Precio_Venta": 5000,
+		"Cantidad_Venta": 2
+	},
+	{
+		"Id_DetalleVenta": 10,
+		"Id_Venta": 7,
+		"Id_Articulo": 4,
+		"Precio_Venta": 2500,
+		"Cantidad_Venta": 1
+	}
+]

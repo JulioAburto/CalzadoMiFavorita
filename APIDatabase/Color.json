@@ -1,0 +1,62 @@
+[
+	{
+		"Id_Color": 1,
+		"NombreColor": "Blanco",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 2,
+		"NombreColor": "Negro",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 3,
+		"NombreColor": "Rojo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 4,
+		"NombreColor": "Dorado",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 5,
+		"NombreColor": "Blanco",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 6,
+		"NombreColor": "Negro",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 7,
+		"NombreColor": "Rojo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 8,
+		"NombreColor": "Dorado",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 9,
+		"NombreColor": "Blanco",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 10,
+		"NombreColor": "Negro",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 11,
+		"NombreColor": "Rojo",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	},
+	{
+		"Id_Color": 12,
+		"NombreColor": "Dorado",
+		"Fecha_Registro": "1900-01-01T00:00:00"
+	}
+]

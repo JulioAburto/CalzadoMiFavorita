@@ -1,0 +1,167 @@
+[
+	{
+		"Id_ProductoTienda": 7,
+		"Id_Color": 1,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3500,
+		"Precio_UnidadCompra": 3000,
+		"Stock": 10,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 8,
+		"Id_Color": 2,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3000,
+		"Precio_UnidadCompra": 2500,
+		"Stock": 20,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 9,
+		"Id_Color": 1,
+		"Id_Talla": 2,
+		"Id_Material": 1,
+		"Id_Articulo": 6,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 12,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 10,
+		"Id_Color": 4,
+		"Id_Talla": 3,
+		"Id_Material": 4,
+		"Id_Articulo": 4,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 15,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 11,
+		"Id_Color": 3,
+		"Id_Talla": 3,
+		"Id_Material": 3,
+		"Id_Articulo": 5,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 5,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 12,
+		"Id_Color": 1,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3500,
+		"Precio_UnidadCompra": 3000,
+		"Stock": 10,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 13,
+		"Id_Color": 2,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3000,
+		"Precio_UnidadCompra": 2500,
+		"Stock": 20,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 14,
+		"Id_Color": 1,
+		"Id_Talla": 2,
+		"Id_Material": 1,
+		"Id_Articulo": 6,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 12,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 15,
+		"Id_Color": 4,
+		"Id_Talla": 3,
+		"Id_Material": 4,
+		"Id_Articulo": 4,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 15,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 16,
+		"Id_Color": 3,
+		"Id_Talla": 3,
+		"Id_Material": 3,
+		"Id_Articulo": 5,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 5,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 17,
+		"Id_Color": 1,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3500,
+		"Precio_UnidadCompra": 3000,
+		"Stock": 10,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 18,
+		"Id_Color": 2,
+		"Id_Talla": 1,
+		"Id_Material": 2,
+		"Id_Articulo": 3,
+		"Precio_UnidadVenta": 3000,
+		"Precio_UnidadCompra": 2500,
+		"Stock": 20,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 19,
+		"Id_Color": 1,
+		"Id_Talla": 2,
+		"Id_Material": 1,
+		"Id_Articulo": 6,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 12,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 20,
+		"Id_Color": 4,
+		"Id_Talla": 3,
+		"Id_Material": 4,
+		"Id_Articulo": 4,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 15,
+		"Estado": true
+	},
+	{
+		"Id_ProductoTienda": 21,
+		"Id_Color": 3,
+		"Id_Talla": 3,
+		"Id_Material": 3,
+		"Id_Articulo": 5,
+		"Precio_UnidadVenta": 2500,
+		"Precio_UnidadCompra": 2000,
+		"Stock": 5,
+		"Estado": true
+	}
+]

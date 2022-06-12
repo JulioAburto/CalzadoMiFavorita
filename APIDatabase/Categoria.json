@@ -1,0 +1,62 @@
+[
+	{
+		"Id_Categoria": 1,
+		"Nombre_Categoría": "Sports",
+		"Descripcion_Categoria": "Zapatos sport para damas y caballeros"
+	},
+	{
+		"Id_Categoria": 2,
+		"Nombre_Categoría": "Sandalias",
+		"Descripcion_Categoria": "Sandalias para damas"
+	},
+	{
+		"Id_Categoria": 3,
+		"Nombre_Categoría": "Tacones",
+		"Descripcion_Categoria": "Tacones para damas"
+	},
+	{
+		"Id_Categoria": 4,
+		"Nombre_Categoría": "Zapatos Bajos",
+		"Descripcion_Categoria": "Zapatos bajos casuales para damas y caballeros"
+	},
+	{
+		"Id_Categoria": 5,
+		"Nombre_Categoría": "Sports",
+		"Descripcion_Categoria": "Zapatos sport para damas y caballeros"
+	},
+	{
+		"Id_Categoria": 6,
+		"Nombre_Categoría": "Sandalias",
+		"Descripcion_Categoria": "Sandalias para damas"
+	},
+	{
+		"Id_Categoria": 7,
+		"Nombre_Categoría": "Tacones",
+		"Descripcion_Categoria": "Tacones para damas"
+	},
+	{
+		"Id_Categoria": 8,
+		"Nombre_Categoría": "Zapatos Bajos",
+		"Descripcion_Categoria": "Zapatos bajos casuales para damas y caballeros"
+	},
+	{
+		"Id_Categoria": 9,
+		"Nombre_Categoría": "Sports",
+		"Descripcion_Categoria": "Zapatos sport para damas y caballeros"
+	},
+	{
+		"Id_Categoria": 10,
+		"Nombre_Categoría": "Sandalias",
+		"Descripcion_Categoria": "Sandalias para damas"
+	},
+	{
+		"Id_Categoria": 11,
+		"Nombre_Categoría": "Tacones",
+		"Descripcion_Categoria": "Tacones para damas"
+	},
+	{
+		"Id_Categoria": 12,
+		"Nombre_Categoría": "Zapatos Bajos",
+		"Descripcion_Categoria": "Zapatos bajos casuales para damas y caballeros"
+	}
+]

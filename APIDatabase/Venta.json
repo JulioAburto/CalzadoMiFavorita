@@ -1,0 +1,98 @@
+[
+	{
+		"Id_Venta": 4,
+		"Id_Usuario": 3,
+		"Id_Articulo": 3,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Juan Perez",
+		"Total_Venta": 3500,
+		"IVA": 150,
+		"Cantidad": 1,
+		"Suma_Recibida": 4000,
+		"Suma_Cambio": 500
+	},
+	{
+		"Id_Venta": 5,
+		"Id_Usuario": 3,
+		"Id_Articulo": 3,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Maria Canales",
+		"Total_Venta": 6000,
+		"IVA": 200,
+		"Cantidad": 2,
+		"Suma_Recibida": 6000,
+		"Suma_Cambio": 0
+	},
+	{
+		"Id_Venta": 6,
+		"Id_Usuario": 3,
+		"Id_Articulo": 6,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Lucia Lopez",
+		"Total_Venta": 5000,
+		"IVA": 160,
+		"Cantidad": 2,
+		"Suma_Recibida": 5000,
+		"Suma_Cambio": 0
+	},
+	{
+		"Id_Venta": 7,
+		"Id_Usuario": 3,
+		"Id_Articulo": 4,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "David Lagos",
+		"Total_Venta": 2500,
+		"IVA": 80,
+		"Cantidad": 1,
+		"Suma_Recibida": 3000,
+		"Suma_Cambio": 500
+	},
+	{
+		"Id_Venta": 8,
+		"Id_Usuario": 3,
+		"Id_Articulo": 3,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Juan Perez",
+		"Total_Venta": 3500,
+		"IVA": 150,
+		"Cantidad": 1,
+		"Suma_Recibida": 4000,
+		"Suma_Cambio": 500
+	},
+	{
+		"Id_Venta": 9,
+		"Id_Usuario": 3,
+		"Id_Articulo": 3,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Maria Canales",
+		"Total_Venta": 6000,
+		"IVA": 200,
+		"Cantidad": 2,
+		"Suma_Recibida": 6000,
+		"Suma_Cambio": 0
+	},
+	{
+		"Id_Venta": 10,
+		"Id_Usuario": 3,
+		"Id_Articulo": 6,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "Lucia Lopez",
+		"Total_Venta": 5000,
+		"IVA": 160,
+		"Cantidad": 2,
+		"Suma_Recibida": 5000,
+		"Suma_Cambio": 0
+	},
+	{
+		"Id_Venta": 11,
+		"Id_Usuario": 3,
+		"Id_Articulo": 4,
+		"Fecha_Factura": "1900-01-01T00:00:00",
+		"Nombre_Cliente": "David Lagos",
+		"Total_Venta": 2500,
+		"IVA": 80,
+		"Cantidad": 1,
+		"Suma_Recibida": 3000,
+		"Suma_Cambio": 500
+	}
+]

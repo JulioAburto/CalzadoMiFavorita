@@ -1,0 +1,62 @@
+[
+	{
+		"Id_Rol": 1,
+		"NombreRol": "Gerente",
+		"Descripción": "Gestiona los procesos de la tienda"
+	},
+	{
+		"Id_Rol": 2,
+		"NombreRol": "Administrador",
+		"Descripción": "Gestiona los Articulos de la bodega"
+	},
+	{
+		"Id_Rol": 3,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	},
+	{
+		"Id_Rol": 4,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	},
+	{
+		"Id_Rol": 5,
+		"NombreRol": "Gerente",
+		"Descripción": "Gestiona los procesos de la tienda"
+	},
+	{
+		"Id_Rol": 6,
+		"NombreRol": "Administrador",
+		"Descripción": "Gestiona los Articulos de la bodega"
+	},
+	{
+		"Id_Rol": 7,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	},
+	{
+		"Id_Rol": 8,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	},
+	{
+		"Id_Rol": 9,
+		"NombreRol": "Gerente",
+		"Descripción": "Gestiona los procesos de la tienda"
+	},
+	{
+		"Id_Rol": 10,
+		"NombreRol": "Administrador",
+		"Descripción": "Gestiona los Articulos de la bodega"
+	},
+	{
+		"Id_Rol": 11,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	},
+	{
+		"Id_Rol": 12,
+		"NombreRol": "Vendedor",
+		"Descripción": "Vendedor de Articulos de la tienda"
+	}
+]
