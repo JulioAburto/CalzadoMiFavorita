@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Calzado Mi Favorita</Text>
       <Text>Sistema de Facturacion</Text>
+      <Text>Computadora Julio a  Computadora Chucas</Text>
       <StatusBar style="auto" />
     </View>
   );
