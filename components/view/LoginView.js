@@ -16,7 +16,6 @@ const LoginView = (props) => {
 					placeholder="Password"
 					textContentType="newPassword"
 					secureTextEntry={true}
-					
 				></TextInput>
 				<Button
 					title="Entrar"
