@@ -9,7 +9,7 @@ import { LoginView } from "./components/view/LoginView";
 import { MainView } from "./components/view/MainView";
 
 export default function App() {
-	return (
+	return (	
 
 		<NavigationContainer>
 			<Stack.Navigator screenOptions={{ headerShown: false }}>
