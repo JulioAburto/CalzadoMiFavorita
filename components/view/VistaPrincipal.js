@@ -6,7 +6,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 //views
 
-
 export default function VistaPrincipal() {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
