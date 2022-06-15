@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import VistaPrincipal from "./VistaPrincipal";
+import { ProveedorView } from "./ProveedorView";
 
 const Tab = createBottomTabNavigator();
 
@@ -8,7 +9,7 @@ const MainView = (props) => {
 	return (
 		<Tab.Navigator>
 			<Tab.Screen name="VistaPrincipal" component={VistaPrincipal} />
-			
+			<Tab.Screen name="ProveedorView" component={ProveedorView} />
 		</Tab.Navigator>
 	);
 };
