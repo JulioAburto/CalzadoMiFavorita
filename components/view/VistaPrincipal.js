@@ -5,11 +5,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 //views
-
+import { CompraView } from "./CompraView";
 export default function VistaPrincipal() {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
-			<Stack.Screen name="#" component={algo} />
+			<Stack.Screen name="CompraView" component={CompraView} />
 		</Stack.Navigator>
 	);
 }

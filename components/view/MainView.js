@@ -8,6 +8,7 @@ const MainView = (props) => {
 	return (
 		<Tab.Navigator>
 			<Tab.Screen name="VistaPrincipal" component={VistaPrincipal} />
+			
 		</Tab.Navigator>
 	);
 };
