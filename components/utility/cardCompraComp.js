@@ -9,15 +9,9 @@ const CardCompraComp = (props) => {
 			{/* <Text style={styles.Resumen}>Resumen: {props.data.ResumenCurso} </Text> */}
 			<Text style={styles.Atribute}>Usuario: {props.data.Id_Usuario} </Text>
 			<Button
-				title="Ver Detalle Cursos"
+				title="Ver Detalle Compra"
 				onPress={() => {
 					//props.cargarBloques(props.data);
-				}}
-			></Button>
-			<Button
-				title="Ver Usuarios Matriculados"
-				onPress={() => {
-					//props.cargar(props.data);
 				}}
 			></Button>
 		</View>

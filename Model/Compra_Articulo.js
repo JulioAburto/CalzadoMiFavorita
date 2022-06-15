@@ -1,4 +1,6 @@
-class Compra_Articulo {
+import { Entity } from "./core/Entity";
+
+class Compra_Articulo extends Entity {
 	constructor(
 		compra = {
 			Id_Compra: "",
@@ -8,6 +10,7 @@ class Compra_Articulo {
 			Total_Costo: "",
 		}
 	) {
+		super();
 		for (const prop in compra) {
 			this[prop] = compra[prop];
 		}
