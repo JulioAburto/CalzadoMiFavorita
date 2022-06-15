@@ -8,8 +8,13 @@ const CardCompraComp = (props) => {
 			<Text style={styles.Atribute}>Compra: {props.data.Id_Compra} </Text>
 			{/* <Text style={styles.Resumen}>Resumen: {props.data.ResumenCurso} </Text> */}
 			<Text style={styles.Atribute}>Usuario: {props.data.Id_Usuario} </Text>
+			<Text style={styles.Atribute}>Proveedor: {props.data.Id_Proveedor} </Text>
+			<Text style={styles.Atribute}>Fecha de Compra: {props.data.Fecha_Compra} </Text>
+			<Text style={styles.Atribute}>Costo Total: C${props.data.Total_Costo} </Text>
+
 			<Button
-				title="Ver Detalle Compra"
+				title="Ver Detalle de Compra"
+				color="#0466C8"
 				onPress={() => {
 					//props.cargarBloques(props.data);
 				}}
@@ -23,7 +28,7 @@ export { CardCompraComp };
 const styles = StyleSheet.create({
 	CardStyle: {
 		flex: 4,
-		backgroundColor: "#212529",
+		backgroundColor: "#33415C",
 		padding: 20,
 		margin: 10,
 		borderRadius: 10,

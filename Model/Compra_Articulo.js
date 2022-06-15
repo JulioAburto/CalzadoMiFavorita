@@ -1,5 +1,4 @@
 import { Entity } from "./core/Entity";
-
 class Compra_Articulo extends Entity {
 	constructor(
 		compra = {
@@ -15,6 +14,9 @@ class Compra_Articulo extends Entity {
 			this[prop] = compra[prop];
 		}
 	}
+	ApiMethods = {
+		Get: "Compra_Articulo",
+	};
 	Id_Compra = "";
 	Id_Usuario = "";
 	Id_Proveedor = "";
