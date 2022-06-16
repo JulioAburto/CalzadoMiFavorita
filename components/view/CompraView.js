@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, Button, ActivityIndicator, TextInput, ScrollView } from "react-native";
 import { Compra_Articulo } from "../../Model/Compra_Articulo";
 import { CardCompraComp } from "../utility/CardCompraComp";
+
 class CompraView extends React.Component {
 	constructor(props) {
 		super();

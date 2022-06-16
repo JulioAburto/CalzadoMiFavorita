@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, ActivityIndicator, Button } from "react-native";
-import { Detalle_Compra } from "../../Model/Detalle_Compra";
+import { Compra_Articulo } from "../../Model/Compra_Articulo";
+
 class CompraContenido extends React.Component {
 	constructor(props) {
 		super();
@@ -9,8 +10,18 @@ class CompraContenido extends React.Component {
 			isLoading: true,
 			Detalle: [],
 		};
-		this.Detalle_Compra = this.props.Detalle_Compra ?? new Detalle_Compra();
+		this.Compra_Articulo = this.props.Compra_Articulo ?? new Compra_Articulo();
+		this.cargarContenido();
 	}
+
+	cargarContenido = async () => {
+		const Detalles = await this.Compra_Articulo.Detalle_Compra.get();
+		this.setState({
+			isLoading: false,
+			Detalles: Detalles,
+		});
+	};
+
 	render() {
 		return (
 			<View>
