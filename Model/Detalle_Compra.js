@@ -1,4 +1,5 @@
-class Detalle_Compra {
+import { Entity } from "./core/Entity";
+class Detalle_Compra extends Entity {
 	constructor(
 		detalle = {
 			Id_DetalleCompra: "",
@@ -11,10 +12,14 @@ class Detalle_Compra {
 			Total_Costo: "",
 		}
 	) {
+		super();
 		for (const prop in detalle) {
 			this[prop] = detalle[prop];
 		}
 	}
+	ApiMethods = {
+		Get: "Detalle_Compra",
+	};
 	Id_DetalleCompra = "";
 	Id_Compra = "";
 	Id_Articulo = "";

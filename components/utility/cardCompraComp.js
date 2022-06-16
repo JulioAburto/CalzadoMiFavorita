@@ -16,7 +16,7 @@ const CardCompraComp = (props) => {
 				title="Ver Detalle de Compra"
 				color="#0466C8"
 				onPress={() => {
-					//props.cargarBloques(props.data);
+					props.CargarDetalleCompra(props.data);
 				}}
 			></Button>
 		</View>

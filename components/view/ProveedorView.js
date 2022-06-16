@@ -25,24 +25,19 @@ class ProveedorView extends React.Component {
 			<ScrollView>
 				<Text>Detalle de Proveedores</Text>
 				<Button
-				title="Nuevo Proveedor"
-				onPress={()=>
-					this.props.navigation.navigate(this.CargarProveedores)
-				}
+					title="Nuevo Proveedor"
+					onPress={() => this.props.navigation.navigate(this.CargarProveedores)}
 				></Button>
 				<TextInput
-				style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}
-				placeholder="Buscar"
-				onChangeText={(val) => this.CargarProveedores(val)}
+					style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}
+					placeholder="Buscar"
+					onChangeText={(val) => this.CargarProveedores(val)}
 				></TextInput>
-                {this.state.isLoading ? (
+				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
 					this.state.Dataset.map((proveedor) => (
-						<CardProveedorComp
-							key={proveedor.Id_Proveedor}
-							data={proveedor}
-						/>
+						<CardProveedorComp key={proveedor.Id_Proveedor} data={proveedor} />
 					))
 				)}
 			</ScrollView>

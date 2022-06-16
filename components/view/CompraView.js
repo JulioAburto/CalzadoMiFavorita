@@ -9,6 +9,7 @@ class CompraView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
+			DetalleCompra: {},
 		};
 		this.Compra = new Compra_Articulo();
 		this.CargarCompra();
@@ -20,28 +21,29 @@ class CompraView extends React.Component {
 			Dataset: Compras,
 		});
 	};
+	CargarDetalleCompra = async (Compra = new Compra_Articulo()) => {
+		const DetalleCompras = await Compra.Detalle_Compra.get();
+		this.setState({
+			DetalleCompra: Compra,
+			DetalleCompras: DetalleCompras,
+		});
+		this.props.navigation.navigate("DetalleCompraView", {
+			Compra: Compra,
+			Dataset: this.state.DetalleCompra,
+		});
+	};
 	render() {
 		return (
 			<ScrollView>
 				<Text>Facturas de las compras</Text>
-				<Button
-				title="Nueva Compra"
-				onPress={()=>
-					this.props.navigation.navigate(this.CargarCompra)
-				}
-				></Button>
-				<TextInput
-				style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}
-				placeholder="Buscar"
-				onChangeText={(val) => this.CargarCompra(val)}
-				></TextInput>
-                {this.state.isLoading ? (
+				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
 					this.state.Dataset.map((compra) => (
 						<CardCompraComp
 							key={compra.Id_Compra}
 							data={compra}
+							CargarDetalleCompra={this.CargarDetalleCompra}
 						/>
 					))
 				)}
