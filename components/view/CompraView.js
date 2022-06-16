@@ -10,7 +10,7 @@ class CompraView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
-			DetalleCompra: {},
+			DetalleCompraSeleccionado: {},
 		};
 		this.Compra = new Compra_Articulo();
 		this.CargarCompra();
@@ -25,12 +25,13 @@ class CompraView extends React.Component {
 	CargarDetalleCompra = async (Compra = new Compra_Articulo()) => {
 		const DetalleCompras = await Compra.Detalle_Compra.get();
 		this.setState({
-			DetalleCompra: Compra,
+			
+			DetalleCompraSeleccionado: Compra,
 			DetalleCompras: DetalleCompras,
 		});
 		this.props.navigation.navigate("DetalleCompraView", {
 			Compra: Compra,
-			Dataset: this.state.DetalleCompra,
+			Dataset: this.state.DetalleCompras,
 		});
 	};
 	render() {

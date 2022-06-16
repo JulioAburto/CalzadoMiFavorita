@@ -16,20 +16,16 @@ class DetalleCompraView extends React.Component {
 		return (
 			<ScrollView>
 				<Text>Detalle</Text>
-				<Button
+				{/* <Button
 					title="<- Regresar"
 					color={"#008000"}
 					onPress={() => this.props.navigation.navigate("CompraView")}
-				></Button>
+				></Button> */}
 				{this.state.Dataset.map((p) => {
 					return (
 						<View>
 							<Text>{p.Id_DetalleCompra}</Text>
-							<CompraContenido 
-								Compra={this.state.Compra} 
-								Detalle_Compra={p}
-							>
-							</CompraContenido>
+							<CompraContenido Compra={this.state.Compra} Detalle_Compra={p}></CompraContenido>
 						</View>
 					);
 				})}
