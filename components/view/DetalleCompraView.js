@@ -15,16 +15,15 @@ class DetalleCompraView extends React.Component {
 	render() {
 		return (
 			<ScrollView>
-				<Text>Detalle</Text>
-				{/* <Button
+				<Text style={styles.Title}>Detalle</Text>
+				{ <Button
 					title="<- Regresar"
-					color={"#008000"}
 					onPress={() => this.props.navigation.navigate("CompraView")}
-				></Button> */}
+				></Button> }
 				{this.state.Dataset.map((p) => {
 					return (
-						<View>
-							<Text>{p.Id_DetalleCompra}</Text>
+						<View style={styles.CardStyles}>
+							<Text style={styles.Atribute}>{p.Id_DetalleCompra}</Text>
 							<CompraContenido Compra={this.state.Compra} Detalle_Compra={p}></CompraContenido>
 						</View>
 					);
@@ -34,3 +33,16 @@ class DetalleCompraView extends React.Component {
 	}
 }
 export { DetalleCompraView };
+
+const styles = StyleSheet.create({
+	Title: {
+		fontSize: 25,
+	},
+	CardStyles: {
+		backgroundColor: "#00000000",
+	},
+	Atribute: {
+		color: "#212529",
+		fontSize: 20,
+	},
+});

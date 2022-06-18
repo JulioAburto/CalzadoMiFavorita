@@ -24,8 +24,8 @@ class CompraContenido extends React.Component {
 
 	render() {
 		return (
-			<View>
-				<Text>Conte</Text>
+			<View style={styles.CardStyle}>
+				<Text style={styles.Title}>Contenido</Text>
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
@@ -42,3 +42,25 @@ class CompraContenido extends React.Component {
 	}
 }
 export{CompraContenido}
+
+const styles = StyleSheet.create({
+	CardStyle: {
+		flex: 4,
+		backgroundColor: "#33415C",
+		padding: 20,
+		margin: 10,
+		borderRadius: 10,
+	},
+	Title: {
+		color: "#f8f9fa",
+		fontSize: 25,
+	},
+	Atribute: {
+		color: "#e9ecef",
+		fontSize: 16,
+	},
+	Resumen: {
+		color: "#e9ecef",
+		fontSize: 12,
+	},
+});
