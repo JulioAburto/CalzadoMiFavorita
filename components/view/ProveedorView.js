@@ -2,13 +2,14 @@ import React from "react";
 import { StyleSheet, Text, Button, ActivityIndicator, TextInput, ScrollView } from "react-native";
 import { Proveedor } from "../../Model/Proveedor";
 import { CardProveedorComp } from "../utility/CardProveedorComp";
+import { FrmProveedor } from "../view/FrmProveedor";
 class ProveedorView extends React.Component {
 	constructor(props) {
 		super();
 		this.props = props;
 		this.state = {
 			isLoading: true,
-			Dataset: [],
+			Dataset:[],
 		};
 		this.Proveedor = new Proveedor();
 		this.CargarProveedores();
@@ -20,13 +21,23 @@ class ProveedorView extends React.Component {
 			Dataset: Proveedores,
 		});
 	};
+
+	GuardarProveedor = async (Bloquep = new Proveedor()) => {
+		await Bloquep.Save("Id_Proveedor");
+		this.props.navigation.navigate("ProveedorView");
+	};
+
 	render() {
 		return (
 			<ScrollView>
 				<Text>Detalle de Proveedores</Text>
 				<Button
 					title="Nuevo Proveedor"
-					onPress={() => this.props.navigation.navigate(this.CargarProveedores)}
+					onPress={() =>
+						this.props.navigation.navigate(
+							"NewProveedor"
+						)
+					}
 				></Button>
 				<TextInput
 					style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}
