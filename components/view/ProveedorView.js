@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, Button, ActivityIndicator, TextInput, ScrollView } from "react-native";
 import { Proveedor } from "../../Model/Proveedor";
 import { CardProveedorComp } from "../utility/CardProveedorComp";
-import { FrmProveedor } from "../view/FrmProveedor";
 class ProveedorView extends React.Component {
 	constructor(props) {
 		super();
