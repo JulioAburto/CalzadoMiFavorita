@@ -27,7 +27,7 @@ class CompraContenido extends React.Component {
 	render() {
 		return (
 			<View style={styles.CardStyle}>
-				<Text style={styles.Title}>Contenido de la Compra</Text>
+				<Text style={styles.Title}>Contenido Detalle de la Compra</Text>
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
