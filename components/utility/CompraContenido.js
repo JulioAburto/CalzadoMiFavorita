@@ -33,7 +33,7 @@ class CompraContenido extends React.Component {
 				) : (
 					this.state.Dataset.map((p) => {
 						return (
-							<View>
+							<View>	<Text style={styles.Atribute}>Atributos desde CompraContenido</Text>
 								<Text style={styles.Atribute}>Id Compra:{p.Id_Compra}</Text>
 								<Text style={styles.Atribute}>Id Articulo:{p.Id_Articulo}</Text>
 								<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
