@@ -44,8 +44,8 @@ class CompraView extends React.Component {
 					this.state.Dataset.map((compra) => (
 						<CardCompraComp
 							key={compra.Id_Compra}
-							data={compra}
 							CargarDetalleCompra={this.CargarDetalleCompra}
+							data={compra}
 						/>
 					))
 				)}

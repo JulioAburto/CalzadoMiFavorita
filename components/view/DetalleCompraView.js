@@ -1,7 +1,8 @@
 import React from "react";
 import { StyleSheet, Text, View, ActivityIndicator, ScrollView, Button } from "react-native";
-import { Detalle_Compra } from "../../Model/Detalle_Compra";
+import { CardCompraDetalleComp } from "../utility/CardCompraDetalleComp";
 import { CompraContenido } from "../utility/CompraContenido";
+import { Detalle_Compra } from "../../Model/Detalle_Compra";
 
 class DetalleCompraView extends React.Component {
 	constructor(props) {
@@ -12,19 +13,39 @@ class DetalleCompraView extends React.Component {
 			Compra: this.props.route.params.Compra,
 		};
 	}
+	GuardarDetalle = async (Detalle = new Detalle_Compra()) => {
+		Detalle.Id_Compra = this.state.Compra.Id_Compra;
+		await Detalle.Save("Id_Compra");
+		const Detalles = await this.state.Compra.Detalle_Compra.get();
+		this.setState({ Dataset: Detalles });
+		this.props.navigation.navigate("DetalleCompraView");
+	};
 	render() {
 		return (
 			<ScrollView>
 				<Text style={styles.Title}>Detalle</Text>
-				{ <Button
+				<Button
 					title="<- Regresar"
 					onPress={() => this.props.navigation.navigate("CompraView")}
-				></Button> }
+				></Button>
+
 				{this.state.Dataset.map((p) => {
 					return (
-						<View style={styles.CardStyles}>
-							<Text style={styles.Atribute}>{p.Id_DetalleCompra}</Text>
-							<CompraContenido Compra={this.state.Compra} Detalle_Compra={p}></CompraContenido>
+						<View key={p.Id_DetalleCompra}>
+							<Text style={styles.Atribute}>Id Detalle Compra:{p.Id_DetalleCompra}</Text>
+							<Text style={styles.Atribute}>Id Compra:{p.Id_Compra}</Text>
+								<Text style={styles.Atribute}>Id Articulo:{p.Id_Articulo}</Text>
+								<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
+								<Text style={styles.Atribute}>Precio Unitario Compra{p.Precio_UnitarioCompra}</Text>
+								<Text style={styles.Atribute}> Precio Unitario Venta:{p.Precio_UnitarioVenta}</Text>
+								<Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
+								<Text style={styles.Atribute}>Total Costo:{p.Total_Costo}</Text>
+							
+							<CompraContenido
+								Compra={this.state.Compra}
+								// GuardarDetalle={this.GuardarDetalle}
+								Detalle_Compra={p}
+							></CompraContenido>
 						</View>
 					);
 				})}
@@ -35,11 +56,15 @@ class DetalleCompraView extends React.Component {
 export { DetalleCompraView };
 
 const styles = StyleSheet.create({
+	CardStyles: {
+		flex: 4,
+		backgroundColor: "#33415C",
+		padding: 20,
+		margin: 10,
+		borderRadius: 10,
+	},
 	Title: {
 		fontSize: 25,
-	},
-	CardStyles: {
-		backgroundColor: "#00000000",
 	},
 	Atribute: {
 		color: "#212529",
