@@ -40,12 +40,14 @@ const styles = StyleSheet.create({
 	contenedorS: {
 		flex: 1,
 		justifyContent: "center",
-		paddingBottom: 50,
+		marginTop: "25%",
+		paddingBottom: 30,
 	},
 	Title: {
 		color: "#001845",
 		fontSize: 26,
 		fontWeight: 800,
+		marginLeft: "10%"
 	},
 	ContenedorOp: {
 		flex: 5,
@@ -54,6 +56,6 @@ const styles = StyleSheet.create({
 		padding: 10,
 		margin: 10,
 		borderWidth: 2,
-		borderRadius: 3,
+		borderRadius: 5,
 	},
 });
