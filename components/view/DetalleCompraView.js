@@ -15,7 +15,7 @@ class DetalleCompraView extends React.Component {
 	}
 	GuardarDetalle = async (Detalle = new Detalle_Compra()) => {
 		Detalle.Id_Compra = this.state.Compra.Id_Compra;
-		await Detalle.Save("Id_Compra");
+		await Detalle.Save("Id_DetalleCompra");
 		const Detalles = await this.state.Compra.Detalle_Compra.get();
 		this.setState({ Dataset: Detalles });
 		this.props.navigation.navigate("DetalleCompraView");
@@ -32,16 +32,15 @@ class DetalleCompraView extends React.Component {
 				{this.state.Dataset.map((p) => {
 					return (
 						<View key={p.Id_DetalleCompra}>
-							<Text style={styles.Atribute}>Atributos desde DetalleCompraView</Text>
-							<Text style={styles.Atribute}>Id Detalle Compra:{p.Id_DetalleCompra}</Text>
+							<Text style={styles.Atribute}>Identificador compra:{p.Id_Compra}</Text>
+							{/* <Text style={styles.Atribute}>Id Detalle Compra:{p.Id_DetalleCompra}</Text>
 							<Text style={styles.Atribute}>Id Compra:{p.Id_Compra}</Text>
 							<Text style={styles.Atribute}>Id Articulo:{p.Id_Articulo}</Text>
 							<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
 							<Text style={styles.Atribute}>Precio Unitario Compra{p.Precio_UnitarioCompra}</Text>
 							<Text style={styles.Atribute}> Precio Unitario Venta:{p.Precio_UnitarioVenta}</Text>
 							<Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
-							<Text style={styles.Atribute}>Total Costo:{p.Total_Costo}</Text>
-
+							<Text style={styles.Atribute}>Total Costo:{p.Total_Costo}</Text> */}
 							<CompraContenido
 								Compra={this.state.Compra}
 								// GuardarDetalle={this.GuardarDetalle}
