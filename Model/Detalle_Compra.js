@@ -1,18 +1,7 @@
 import { Entity } from "./core/Entity";
 import { Articulo } from "./Articulo";
 class Detalle_Compra extends Entity {
-	constructor(
-		detalle = {
-			Id_DetalleCompra: "",
-			Id_Compra: "",
-			Id_Articulo: "",
-			Cantidad: "",
-			Precio_UnitarioCompra: "",
-			Precio_UnitarioVenta: "",
-			Fecha: "",
-			Total_Costo: "",
-		}
-	) {
+	constructor(detalle) {
 		super();
 		for (const prop in detalle) {
 			this[prop] = detalle[prop];
@@ -33,8 +22,8 @@ class Detalle_Compra extends Entity {
 		val: [],
 		get: async () => {
 			if (this.Id_DetalleCompra != "") {
-				const Detalle = new Articulo();
-				return await Detalle.GetByProps("Id_DetalleCompra", this.Id_DetalleCompra);
+				const Articulos = new Articulo();
+				return await Articulos.GetByProps("Id_DetalleCompra", this.Id_DetalleCompra);
 			} else {
 				return this.Articulo.val;
 			}
