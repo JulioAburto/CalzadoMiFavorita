@@ -8,15 +8,16 @@ const Stack = createNativeStackNavigator();
 import { LoginView } from "./components/view/LoginView";
 import { MainView } from "./components/view/MainView";
 import { NewProveedor } from "./components/view/NewProveedor";
+import { NewArticulo } from "./components/view/NewArticulo";
 
 export default function App() {
-	return (	
-
+	return (
 		<NavigationContainer>
 			<Stack.Navigator screenOptions={{ headerShown: false }}>
 				<Stack.Screen name="LoginView" component={LoginView} />
-				<Stack.Screen name="MainView" component={MainView} /> 
-				<Stack.Screen name="NewProveedor" component={NewProveedor} /> 
+				<Stack.Screen name="MainView" component={MainView} />
+				<Stack.Screen name="NewProveedor" component={NewProveedor} />
+				<Stack.Screen name="NewArticulo" component={NewProveedor} />
 			</Stack.Navigator>
 		</NavigationContainer>
 

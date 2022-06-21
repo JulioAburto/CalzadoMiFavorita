@@ -6,4 +6,5 @@ export const ApiDatabase = {
 	Marca: require("../../APIDatabase/Marca.json"),
 	Material: require("../../APIDatabase/Material.json"),
 	Proveedor: require("../../APIDatabase/Proveedor.json"),
+	Articulo: require("../../APIDatabase/Articulo.json"),
 };
