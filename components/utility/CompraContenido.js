@@ -8,7 +8,7 @@ class CompraContenido extends React.Component {
 		this.props = props;
 		this.state = {
 			isLoading: true,
-			Dataset: [],
+			Detalles: [],
 		};
 		this.Detalle_Compra = this.props.Detalle_Compra ?? new Detalle_Compra();
 		this.cargarContenido();
@@ -24,22 +24,15 @@ class CompraContenido extends React.Component {
 
 	render() {
 		return (
-			<View style={styles.CardStyle}>
-				<Text style={styles.Title}>Contenido Detalle de la Compra</Text>
+			<View>
+				<Text style={styles.Title}>Contenido Articulo</Text>
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
-					this.state.Dataset.map((p) => {
+					this.state.Detalles.map((p) => {
 						return (
 							<View key={p.Id_Articulo}>	
-								<Text style={styles.Atribute}>{p.Id_Compra}</Text>
-								{/*<Text style={styles.Atribute}>Id Compra:{p.Id_Compra}</Text>
-								<Text style={styles.Atribute}>Id Articulo:{p.Id_Articulo}</Text>
-								<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
-								<Text style={styles.Atribute}>Precio Unitario Compra{p.Precio_UnitarioCompra}</Text>
-								<Text style={styles.Atribute}> Precio Unitario Venta:{p.Precio_UnitarioVenta}</Text>
-								<Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
-								<Text style={styles.Atribute}>Total Costo:{p.Total_Costo}</Text> */}
+								<Text style={styles.Atribute}>{p.Nombre_Articulo}</Text>
 							</View>
 						);
 					})
