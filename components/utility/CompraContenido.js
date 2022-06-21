@@ -26,6 +26,13 @@ class CompraContenido extends React.Component {
 		return (
 			<View>
 				<Text style={styles.Title}>Contenido Articulo</Text>
+				<Button
+					title="Nuevo Articulo"
+					color="#0466C8"
+					onPress={() => {
+						this.props.NuevoContenido(this.NewArticulo, this.cargarContenidos);
+					}}
+				></Button>
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (

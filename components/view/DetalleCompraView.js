@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ActivityIndicator, ScrollView, Button } from "r
 import { CardCompraDetalleComp } from "../utility/CardCompraDetalleComp";
 import { CompraContenido } from "../utility/CompraContenido";
 import { Detalle_Compra } from "../../Model/Detalle_Compra";
+import { Articulo } from "../../Model/Articulo";
 
 class DetalleCompraView extends React.Component {
 	constructor(props) {
@@ -17,7 +18,14 @@ class DetalleCompraView extends React.Component {
 		this.props.navigation.navigate("NewArticulo", {
 			Detalle: Detalle,
 			cargarContenidos: cargarContenidos,
+			GuardarArticulo: this.GuardarArticulo,
 		});
+	};
+	GuardarArticulo = async (Detalle = new Detalle_Compra(), Art = new Articulo()) => {
+		Art.Id_Articulo = Detalle.Id_Articulo;
+		await Art.Save("Id_Articulo");
+		this.props.navigation.navigate("DetalleCompraView");
+		//	this.props.navigation.navigate("FrmContenido", { Dataset: this.Curso });
 	};
 	// GuardarDetalle = async (Detalle = new Detalle_Compra()) => {
 	// 	Detalle.Id_Compra = this.state.Compra.Id_Compra;

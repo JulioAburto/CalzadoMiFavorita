@@ -8,6 +8,7 @@ class NewArticulo extends React.Component {
         this.props = props;
         this.Articulo = new Articulo();
         this.Detalle =  this.props.route.params.Detalle;
+		this.GuardarArticulo = this.props.route.params.GuardarArticulo
 		this.cargarContenidos = this.props.route.params.cargarContenidos
 	}
 
@@ -27,8 +28,8 @@ class NewArticulo extends React.Component {
 					title=" Guardar "
 					color={"#008000"}
 					onPress={async () => {
-						//await this.GuardarContenido(this.Bloque, this.Contenido);
-						//await this.cargarContenidos();
+						await this.GuardarArticulo(this.Detalle, this.Articulo);
+						await this.cargarContenidos();
 						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
