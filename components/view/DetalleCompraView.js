@@ -26,21 +26,22 @@ class DetalleCompraView extends React.Component {
 				<Text style={styles.Title}>Detalle</Text>
 				<Button
 					title="<- Regresar"
+					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("CompraView")}
 				></Button>
 
 				{this.state.Dataset.map((p) => {
 					return (
 						<View style={styles.CardStyles} key={p.Id_DetalleCompra}>
-							<Text style={styles.Atribute}>Identificador compra:{p.Id_Compra}</Text>
-							<Text style={styles.Atribute}>Id Detalle Compra:{p.Id_DetalleCompra}</Text>
-							<Text style={styles.Atribute}>Id Compra:{p.Id_Compra}</Text>
-							<Text style={styles.Atribute}>Id Articulo:{p.Id_Articulo}</Text>
-							<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
-							<Text style={styles.Atribute}>Precio Unitario Compra{p.Precio_UnitarioCompra}</Text>
-							<Text style={styles.Atribute}> Precio Unitario Venta:{p.Precio_UnitarioVenta}</Text>
-							<Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
-							<Text style={styles.Atribute}>Total Costo:{p.Total_Costo}</Text>
+							<Text style={styles.Atribute}>Identificador compra: {p.Id_Compra}</Text>
+							<Text style={styles.Atribute}>Id Detalle Compra: {p.Id_DetalleCompra}</Text>
+							<Text style={styles.Atribute}>Id Compra: {p.Id_Compra}</Text>
+							<Text style={styles.Atribute}>Id Articulo: {p.Id_Articulo}</Text>
+							<Text style={styles.Atribute}>Cantidad: {p.Cantidad}</Text>
+							<Text style={styles.Atribute}>Precio Unitario Compra: {p.Precio_UnitarioCompra}</Text>
+							<Text style={styles.Atribute}>Precio Unitario Venta: {p.Precio_UnitarioVenta}</Text>
+							<Text style={styles.Atribute}>Fecha: {p.Fecha}</Text>
+							<Text style={styles.Atribute}>Total Costo: {p.Total_Costo}</Text>
 							{/* <CompraContenido
 								Compra={this.state.Compra}
 								// GuardarDetalle={this.GuardarDetalle}
@@ -64,10 +65,11 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 	},
 	Title: {
+		color: "#f8f9fa",
 		fontSize: 25,
 	},
 	Atribute: {
-		color: "#edf2fb",
-		fontSize: 20,
+		color: "#e9ecef",
+		fontSize: 16,
 	},
 });

@@ -9,7 +9,7 @@ const MainView = (props) => {
 	return (
 		<Tab.Navigator>
 			<Tab.Screen name="VistaPrincipal" component={VistaPrincipal} />
-			<Tab.Screen name="Proveedor" component={ProveedorView} />
+			<Tab.Screen name="ProveedorView" component={ProveedorView} />
 		</Tab.Navigator>
 	);
 };

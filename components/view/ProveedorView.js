@@ -8,7 +8,7 @@ class ProveedorView extends React.Component {
 		this.props = props;
 		this.state = {
 			isLoading: true,
-			Dataset:[],
+			Dataset: [],
 		};
 		this.Proveedor = new Proveedor();
 		this.CargarProveedores();
@@ -32,10 +32,11 @@ class ProveedorView extends React.Component {
 				<Text>Detalle de Proveedores</Text>
 				<Button
 					title="Nuevo Proveedor"
+					color="#0466C8"
 					onPress={() =>
-						this.props.navigation.navigate(
-							"NewProveedor"
-						)
+						this.props.navigation.navigate("NewProveedor", {
+							CargarProveedores: this.CargarProveedores,
+						})
 					}
 				></Button>
 				<TextInput

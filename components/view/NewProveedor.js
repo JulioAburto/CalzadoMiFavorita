@@ -6,29 +6,53 @@ class NewProveedor extends React.Component {
 	constructor(props) {
 		super();
 		this.props = props;
-		this.BloqueProv = new Proveedor();
+		this.ProveedorBlock = new Proveedor();
+		this.state = {
+			Proveedores: [],
+		};
+		this.CargarProveedores = this.props.route.params.CargarProveedores;
 	}
+	GuardarProveedor = async () => {
+		await this.ProveedorBlock.Save("Id_Proveedor");
+		this.CargarProveedores();
+	};
 
-	render() {  
+	render() {
 		return (
 			<View style={{ padding: 10 }}>
 				<Text style={styles.Title}>Nuevo Proveedor </Text>
 				<TextInput
 					style={styles.InputStyle}
-					placeholder="Nombre Proveedor"
-					onChangeText={(val) => (this.BloqueProv.Nombre_proveedor = val)}
+					placeholder="Nombre Proveedor:"
+					onChangeText={(val) => (this.ProveedorBlock.Nombre_proveedor = val)}
 				></TextInput>
-                
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Direccion: "
+					onChangeText={(val) => (this.ProveedorBlock.Dirección = val)}
+				></TextInput>
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Telefono:"
+					onChangeText={(val) => (this.ProveedorBlock.Teléfono = val)}
+				></TextInput>
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Correo"
+					onChangeText={(val) => (this.ProveedorBlock.Correo = val)}
+				></TextInput>
+
 				<Button
 					title=" Guardar "
-					color={"#008000"}
+					color={"#0466C8"}
 					onPress={async () => {
-						await this.props.route.params.GuardarBloque(this.BloqueProv);
+						await this.GuardarProveedor();
+						this.props.navigation.navigate("ProveedorView");
 					}}
 				></Button>
 				<Button
 					title=" Cancelar "
-					color={"#008000"}
+					color={"#0466C8"}
 					onPress={() => this.props.navigation.navigate("ProveedorView")}
 				></Button>
 			</View>
