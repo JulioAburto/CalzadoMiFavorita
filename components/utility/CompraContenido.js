@@ -14,13 +14,13 @@ class CompraContenido extends React.Component {
 		this.cargarContenido();
 	}
 
-	 cargarContenido = async () => {
-	 	const Detalles = await this.Detalle_Compra.Articulo.get();
-	 	this.setState({
-	 		isLoading: false,
-	 		Detalles: Detalles,
-	 	});
-	 };
+	cargarContenido = async () => {
+		const Detalles = await this.Detalle_Compra.Articulo.get();
+		this.setState({
+			isLoading: false,
+			Detalles: Detalles,
+		});
+	};
 
 	render() {
 		return (
@@ -31,8 +31,10 @@ class CompraContenido extends React.Component {
 				) : (
 					this.state.Detalles.map((p) => {
 						return (
-							<View key={p.Id_Articulo}>	
-								<Text style={styles.Atribute}>{p.Nombre_Articulo}</Text>
+							<View style={styles.CardStyle} key={p.Id_Articulo}>
+								<Text style={styles.Atribute}>Nombre: {p.Nombre_Articulo}</Text>
+								<Text style={styles.Atribute}>Descripcion: {p.Descripcion_Articulo}</Text>
+								<Text style={styles.Atribute}>Fecha de Registro: {p.Fecha_Registro}</Text>
 							</View>
 						);
 					})

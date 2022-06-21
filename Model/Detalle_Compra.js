@@ -23,7 +23,7 @@ class Detalle_Compra extends Entity {
 		get: async () => {
 			if (this.Id_DetalleCompra != "") {
 				const Articulos = new Articulo();
-				return await Articulos.GetByProps("Id_DetalleCompra", this.Id_DetalleCompra);
+				return await Articulos.GetByProps("Id_Articulo", this.Id_Articulo);
 			} else {
 				return this.Articulo.val;
 			}

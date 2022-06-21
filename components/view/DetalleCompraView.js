@@ -13,12 +13,12 @@ class DetalleCompraView extends React.Component {
 			Compra: this.props.route.params.Compra,
 		};
 	}
-	NuevoContenido = async (Detalle , cargarContenidos) => {
+	NuevoContenido = async (Detalle, cargarContenidos) => {
 		this.props.navigation.navigate("NewArticulo", {
 			Detalle: Detalle,
 			cargarContenidos: cargarContenidos,
 		});
-	};	
+	};
 	// GuardarDetalle = async (Detalle = new Detalle_Compra()) => {
 	// 	Detalle.Id_Compra = this.state.Compra.Id_Compra;
 	// 	await Detalle.Save("Id_DetalleCompra");
@@ -39,6 +39,7 @@ class DetalleCompraView extends React.Component {
 				{this.state.Dataset.map((p) => {
 					return (
 						<View style={styles.CardStyles} key={p.Id_DetalleCompra}>
+							<Text style={styles.TitleP}>Factura Compra</Text>
 							<Text style={styles.Atribute}>Identificador compra: {p.Id_Compra}</Text>
 							<Text style={styles.Atribute}>Id Detalle Compra: {p.Id_DetalleCompra}</Text>
 							<Text style={styles.Atribute}>Id Compra: {p.Id_Compra}</Text>
@@ -48,7 +49,7 @@ class DetalleCompraView extends React.Component {
 							<Text style={styles.Atribute}>Precio Unitario Venta: {p.Precio_UnitarioVenta}</Text>
 							<Text style={styles.Atribute}>Fecha: {p.Fecha}</Text>
 							<Text style={styles.Atribute}>Total Costo: {p.Total_Costo}</Text>
-							 <CompraContenido
+							<CompraContenido
 								Compra={this.state.Compra}
 								NuevoContenido={this.NuevoContenido}
 								Detalle_Compra={p}
@@ -70,11 +71,15 @@ const styles = StyleSheet.create({
 		margin: 10,
 		borderRadius: 10,
 	},
+	TitleP: {
+		color: "#f8f9fa",
+		fontSize: 28,
+	},
 	Title: {
 		color: "#f8f9fa",
 		fontSize: 25,
 	},
-		Atribute: {
+	Atribute: {
 		color: "#e9ecef",
 		fontSize: 16,
 	},

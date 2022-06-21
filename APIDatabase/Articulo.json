@@ -60,7 +60,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 2,
 		"Código_Articulo": 1,
-		"Nombre_Articulo": "Sandalia Rosita",
+		"Nombre_Articulo": "Sandalia Air Jordan",
 		"Descripcion_Articulo": "Sandalia para damas",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -71,7 +71,7 @@
 		"Id_Modelo": 4,
 		"Id_Marca": 3,
 		"Código_Articulo": 2,
-		"Nombre_Articulo": "Zapato Artezano",
+		"Nombre_Articulo": "Zapato Bota Cuero",
 		"Descripcion_Articulo": "Zapato casual para toda ocasion",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": false
@@ -82,7 +82,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 4,
 		"Código_Articulo": 3,
-		"Nombre_Articulo": "Zapato Adidas",
+		"Nombre_Articulo": "Zapato Formales",
 		"Descripcion_Articulo": "Zapato de corte bajo para dama",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -93,7 +93,7 @@
 		"Id_Modelo": 1,
 		"Id_Marca": 1,
 		"Código_Articulo": 0,
-		"Nombre_Articulo": "Zapato Nike",
+		"Nombre_Articulo": "Sandalia Tacon",
 		"Descripcion_Articulo": "Zapato para realizar deportes",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -104,7 +104,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 2,
 		"Código_Articulo": 1,
-		"Nombre_Articulo": "Sandalia Rosita",
+		"Nombre_Articulo": "Sandalia Morada",
 		"Descripcion_Articulo": "Sandalia para damas",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -115,7 +115,7 @@
 		"Id_Modelo": 4,
 		"Id_Marca": 3,
 		"Código_Articulo": 2,
-		"Nombre_Articulo": "Zapato Artezano",
+		"Nombre_Articulo": "Zapato ortopedico",
 		"Descripcion_Articulo": "Zapato casual para toda ocasion",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": false
@@ -126,7 +126,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 4,
 		"Código_Articulo": 3,
-		"Nombre_Articulo": "Zapato Adidas",
+		"Nombre_Articulo": "Zapato Puma",
 		"Descripcion_Articulo": "Zapato de corte bajo para dama",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -137,7 +137,7 @@
 		"Id_Modelo": 1,
 		"Id_Marca": 1,
 		"Código_Articulo": 0,
-		"Nombre_Articulo": "Zapato Nike",
+		"Nombre_Articulo": "Zapato Rhino",
 		"Descripcion_Articulo": "Zapato para realizar deportes",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -148,7 +148,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 2,
 		"Código_Articulo": 1,
-		"Nombre_Articulo": "Sandalia Rosita",
+		"Nombre_Articulo": "Sandalia Reeboock",
 		"Descripcion_Articulo": "Sandalia para damas",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
@@ -159,7 +159,7 @@
 		"Id_Modelo": 4,
 		"Id_Marca": 3,
 		"Código_Articulo": 2,
-		"Nombre_Articulo": "Zapato Artezano",
+		"Nombre_Articulo": "Zapato New Balance",
 		"Descripcion_Articulo": "Zapato casual para toda ocasion",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": false
@@ -170,7 +170,7 @@
 		"Id_Modelo": 3,
 		"Id_Marca": 4,
 		"Código_Articulo": 3,
-		"Nombre_Articulo": "Zapato Adidas",
+		"Nombre_Articulo": "Zapato Converse",
 		"Descripcion_Articulo": "Zapato de corte bajo para dama",
 		"Fecha_Registro": "1900-01-01T00:00:00",
 		"Estado": true
