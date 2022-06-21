@@ -38,6 +38,20 @@ class CompraView extends React.Component {
 		return (
 			<ScrollView>
 				<Text>Facturas de las compras</Text>
+				<Button
+					title="Nueva Factura De Compra"
+					color="#0466C8"
+					onPress={() =>
+						this.props.navigation.navigate("", {
+							//CargarProveedores: this.CargarProveedores,
+						})
+					}
+				></Button>
+				<TextInput
+					style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}
+					placeholder="Buscar"
+					onChangeText={(val) => this.CargarCompra(val)}
+				></TextInput>
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
