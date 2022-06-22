@@ -23,7 +23,7 @@ class NewProveedor extends React.Component {
 				<Text style={styles.Title}>Nuevo Proveedor </Text>
 				<TextInput
 					style={styles.InputStyle}
-					placeholder="Nombre Proveedor:"
+					placeholder="Nombre Proveedor: "
 					onChangeText={(val) => (this.ProveedorBlock.Nombre_proveedor = val)}
 				></TextInput>
 				<TextInput
@@ -33,12 +33,12 @@ class NewProveedor extends React.Component {
 				></TextInput>
 				<TextInput
 					style={styles.InputStyle}
-					placeholder="Telefono:"
+					placeholder="Telefono: "
 					onChangeText={(val) => (this.ProveedorBlock.Teléfono = val)}
 				></TextInput>
 				<TextInput
 					style={styles.InputStyle}
-					placeholder="Correo"
+					placeholder="Correo: "
 					onChangeText={(val) => (this.ProveedorBlock.Correo = val)}
 				></TextInput>
 

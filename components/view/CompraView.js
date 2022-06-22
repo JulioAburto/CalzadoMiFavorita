@@ -25,7 +25,6 @@ class CompraView extends React.Component {
 	CargarDetalleCompra = async (Compra = new Compra_Articulo()) => {
 		const DetalleCompras = await Compra.Detalle_Compra.get();
 		this.setState({
-			
 			DetalleCompraSeleccionado: Compra,
 			DetalleCompras: DetalleCompras,
 		});
@@ -37,7 +36,7 @@ class CompraView extends React.Component {
 	render() {
 		return (
 			<ScrollView>
-				<Text>Facturas de las compras</Text>
+				<Text style={styles.Title}>Facturas de las compras</Text>
 				<Button
 					title="Nueva Factura De Compra"
 					color="#0466C8"
@@ -69,3 +68,9 @@ class CompraView extends React.Component {
 }
 
 export { CompraView };
+const styles = StyleSheet.create({
+	Title: {
+		color: "#001233",
+		fontSize: 25,
+	},
+});

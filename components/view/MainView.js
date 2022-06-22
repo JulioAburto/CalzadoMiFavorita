@@ -8,7 +8,7 @@ const Tab = createBottomTabNavigator();
 const MainView = (props) => {
 	return (
 		<Tab.Navigator>
-			<Tab.Screen name="VistaPrincipal" component={VistaPrincipal} />
+			<Tab.Screen name="Vista Principal" component={VistaPrincipal}  />
 			<Tab.Screen name="ProveedorView" component={ProveedorView} />
 		</Tab.Navigator>
 	);

@@ -2,7 +2,7 @@
 	{
 		"Id_DetalleCompra": 4,
 		"Id_Compra": 1,
-		"Id_Articulo": 3,
+		"Id_Articulo": 1,
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
@@ -12,7 +12,7 @@
 	{
 		"Id_DetalleCompra": 5,
 		"Id_Compra": 2,
-		"Id_Articulo": 3,
+		"Id_Articulo": 2,
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
@@ -22,7 +22,7 @@
 	{
 		"Id_DetalleCompra": 6,
 		"Id_Compra": 1,
-		"Id_Articulo": 6,
+		"Id_Articulo": 3,
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
@@ -42,7 +42,7 @@
 	{
 		"Id_DetalleCompra": 8,
 		"Id_Compra": 1,
-		"Id_Articulo": 3,
+		"Id_Articulo": 5,
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
@@ -52,7 +52,7 @@
 	{
 		"Id_DetalleCompra": 9,
 		"Id_Compra": 2,
-		"Id_Articulo": 3,
+		"Id_Articulo": 6,
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
@@ -62,7 +62,7 @@
 	{
 		"Id_DetalleCompra": 10,
 		"Id_Compra": 1,
-		"Id_Articulo": 6,
+		"Id_Articulo": 7,
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
@@ -72,7 +72,7 @@
 	{
 		"Id_DetalleCompra": 11,
 		"Id_Compra": 2,
-		"Id_Articulo": 4,
+		"Id_Articulo": 8,
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,

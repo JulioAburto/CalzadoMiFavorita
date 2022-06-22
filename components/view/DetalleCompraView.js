@@ -39,7 +39,7 @@ class DetalleCompraView extends React.Component {
 			<ScrollView>
 				<Text style={styles.Title}>Detalle</Text>
 				<Button
-					title="<- Regresar"
+					title=" ← Regresar"
 					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("CompraView")}
 				></Button>

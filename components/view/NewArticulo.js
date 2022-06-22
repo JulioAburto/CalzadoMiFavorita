@@ -5,11 +5,11 @@ import { Articulo } from "../../Model/Articulo";
 class NewArticulo extends React.Component {
 	constructor(props) {
 		super();
-        this.props = props;
-        this.Articulo = new Articulo();
-        this.Detalle =  this.props.route.params.Detalle;
-		this.GuardarArticulo = this.props.route.params.GuardarArticulo
-		this.cargarContenidos = this.props.route.params.cargarContenidos
+		this.props = props;
+		this.Articulo = new Articulo();
+		this.Detalle = this.props.route.params.Detalle;
+		this.GuardarArticulo = this.props.route.params.GuardarArticulo;
+		this.cargarContenidos = this.props.route.params.cargarContenidos;
 	}
 
 	render() {
@@ -21,6 +21,16 @@ class NewArticulo extends React.Component {
 					style={styles.InputStyle}
 					placeholder="Nombre"
 					onChangeText={(val) => (this.Articulo.Nombre = val)}
+				></TextInput>
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Descripcion:"
+					onChangeText={(val) => (this.Articulo.Descripcion_Articulo = val)}
+				></TextInput>
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Fecha Registro:"
+					onChangeText={(val) => (this.Articulo.Fecha_Registro = val)}
 				></TextInput>
 
 				{/* OPCIONES */}
