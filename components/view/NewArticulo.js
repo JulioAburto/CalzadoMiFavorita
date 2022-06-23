@@ -8,9 +8,14 @@ class NewArticulo extends React.Component {
 		this.props = props;
 		this.Articulo = new Articulo();
 		this.Detalle = this.props.route.params.Detalle;
-		this.GuardarArticulo = this.props.route.params.GuardarArticulo;
+		//this.GuardarArticulo = this.props.route.params.GuardarArticulo;
 		this.cargarContenidos = this.props.route.params.cargarContenidos;
 	}
+
+	GuardarArticulo = async () => {
+		await this.Articulo.Save("Id_Articulo");
+		this.cargarContenidos();
+	};
 
 	render() {
 		return (
@@ -27,19 +32,19 @@ class NewArticulo extends React.Component {
 					placeholder="Descripcion:"
 					onChangeText={(val) => (this.Articulo.Descripcion_Articulo = val)}
 				></TextInput>
-				<TextInput
+				{/* <TextInput
 					style={styles.InputStyle}
 					placeholder="Fecha Registro:"
 					onChangeText={(val) => (this.Articulo.Fecha_Registro = val)}
-				></TextInput>
+				></TextInput> */}
 
 				{/* OPCIONES */}
 				<Button
 					title=" Guardar "
 					color="#0466C8"
 					onPress={async () => {
-						await this.GuardarArticulo(this.Detalle, this.Articulo);
-						await this.cargarContenidos();
+						await this.GuardarArticulo();
+						this.props.navigation.navigate("ArticulosView");
 						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
