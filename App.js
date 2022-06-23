@@ -9,15 +9,16 @@ import { LoginView } from "./components/view/LoginView";
 import { MainView } from "./components/view/MainView";
 import { NewProveedor } from "./components/view/NewProveedor";
 import { NewArticulo } from "./components/view/NewArticulo";
-
+import { ArticuloView } from "./components/view/ArticuloView";
 export default function App() {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator screenOptions={{ headerShown: false }}>
 				<Stack.Screen name="LoginView" component={LoginView} />
 				<Stack.Screen name="MainView" component={MainView} />
-				<Stack.Screen name="NewProveedor" component={NewProveedor} />
-				<Stack.Screen name="NewArticulo" component={NewArticulo} />
+				{/* <Stack.Screen name="NewProveedor" component={NewProveedor} />
+				<Stack.Screen name="ArticuloView" component={ArticuloView} />
+				<Stack.Screen name="NewArticulo" component={NewArticulo} /> */}
 			</Stack.Navigator>
 		</NavigationContainer>
 

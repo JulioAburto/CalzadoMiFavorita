@@ -8,13 +8,14 @@ const Stack = createNativeStackNavigator();
 import { CompraView } from "./CompraView";
 import { DetalleCompraView } from "./DetalleCompraView";
 import { NewArticulo } from "./NewArticulo";
+import { ArticuloView } from "./ArticuloView";
 export default function VistaPrincipal() {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
 			<Stack.Screen name="CompraView" component={CompraView} />
 			<Stack.Screen name="DetalleCompraView" component={DetalleCompraView} />
 			<Stack.Screen name="NewArticulo" component={NewArticulo} />
-
+		
 		</Stack.Navigator>
 	);
 }

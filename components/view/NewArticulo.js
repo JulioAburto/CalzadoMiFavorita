@@ -36,7 +36,7 @@ class NewArticulo extends React.Component {
 				{/* OPCIONES */}
 				<Button
 					title=" Guardar "
-					color={"#008000"}
+					color="#0466C8"
 					onPress={async () => {
 						await this.GuardarArticulo(this.Detalle, this.Articulo);
 						await this.cargarContenidos();
@@ -45,7 +45,7 @@ class NewArticulo extends React.Component {
 				></Button>
 				<Button
 					title=" Cancelar "
-					color={"#008000"}
+					color="#0466C8"
 					onPress={
 						() => {}
 						//	this.props.navigation.navigate("DetalleCursoView")

@@ -44,7 +44,7 @@ class NewProveedor extends React.Component {
 
 				<Button
 					title=" Guardar "
-					color={"#0466C8"}
+					color="#0466C8"
 					onPress={async () => {
 						await this.GuardarProveedor();
 						this.props.navigation.navigate("ProveedorView");
@@ -52,7 +52,7 @@ class NewProveedor extends React.Component {
 				></Button>
 				<Button
 					title=" Cancelar "
-					color={"#0466C8"}
+					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("ProveedorView")}
 				></Button>
 			</View>

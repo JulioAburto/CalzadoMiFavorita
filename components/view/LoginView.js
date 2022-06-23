@@ -41,7 +41,7 @@ export { LoginView };
 const styles = StyleSheet.create({
 	contenedorP: {
 		flex: 1,
-		backgroundColor: "#979dac",
+		backgroundColor: "#dee2e6",
 		padding: 20,
 		justifyContent: "center",
 	},
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 		marginLeft: "10%",
 	},
 	ContenedorOp: {
-		backgroundColor: "#7D8597",
+		backgroundColor: "#ced4da",
 		borderRadius: 20,
 		flex: 5,
 	},

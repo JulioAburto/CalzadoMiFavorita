@@ -48,10 +48,10 @@ class DetalleCompraView extends React.Component {
 					return (
 						<View style={styles.CardStyles} key={p.Id_DetalleCompra}>
 							<Text style={styles.TitleP}>Factura Compra</Text>
-							<Text style={styles.Atribute}>Identificador compra: {p.Id_Compra}</Text>
+							{/* <Text style={styles.Atribute}>Identificador compra: {p.Id_Compra}</Text>
 							<Text style={styles.Atribute}>Id Detalle Compra: {p.Id_DetalleCompra}</Text>
 							<Text style={styles.Atribute}>Id Compra: {p.Id_Compra}</Text>
-							<Text style={styles.Atribute}>Id Articulo: {p.Id_Articulo}</Text>
+							<Text style={styles.Atribute}>Id Articulo: {p.Id_Articulo}</Text> */}
 							<Text style={styles.Atribute}>Cantidad: {p.Cantidad}</Text>
 							<Text style={styles.Atribute}>Precio Unitario Compra: {p.Precio_UnitarioCompra}</Text>
 							<Text style={styles.Atribute}>Precio Unitario Venta: {p.Precio_UnitarioVenta}</Text>
