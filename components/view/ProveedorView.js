@@ -29,7 +29,7 @@ class ProveedorView extends React.Component {
 	render() {
 		return (
 			<ScrollView>
-				<Text>Detalle de Proveedores</Text>
+				<Text style={styles.Title}>Detalle de Proveedores</Text>
 				<Button
 					title="Nuevo Proveedor"
 					color="#0466C8"
@@ -57,3 +57,15 @@ class ProveedorView extends React.Component {
 }
 
 export { ProveedorView };
+const styles = StyleSheet.create({
+	Title: {
+		color: "#252422",
+		fontSize: 25,
+	},
+	InputStyle: {
+		padding: 10,
+		margin: 10,
+		borderWidth: 2,
+		borderRadius: 3,
+	},
+});

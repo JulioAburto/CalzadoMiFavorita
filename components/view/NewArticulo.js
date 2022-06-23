@@ -5,16 +5,22 @@ import { Articulo } from "../../Model/Articulo";
 class NewArticulo extends React.Component {
 	constructor(props) {
 		super();
-		this.props = props;
-		this.Articulo = new Articulo();
-		this.Detalle = this.props.route.params.Detalle;
+		// this.props = props;
+		// this.Articulo = new Articulo();
+		// this.Detalle = this.props.route.params.Detalle;
 		//this.GuardarArticulo = this.props.route.params.GuardarArticulo;
-		this.cargarContenidos = this.props.route.params.cargarContenidos;
+		// this.cargarContenidos = this.props.route.params.cargarContenidos;
+		this.props = props;
+		this.ArticuloG = new Articulo();
+		this.state = {
+			Articulos: [],
+		};
+		this.CargarArticulo = this.props.route.params.CargarArticulo;
 	}
 
 	GuardarArticulo = async () => {
-		await this.Articulo.Save("Id_Articulo");
-		this.cargarContenidos();
+		await this.ArticuloG.Save("Id_Articulo");
+		this.CargarArticulo();
 	};
 
 	render() {
@@ -25,12 +31,17 @@ class NewArticulo extends React.Component {
 				<TextInput
 					style={styles.InputStyle}
 					placeholder="Nombre"
-					onChangeText={(val) => (this.Articulo.Nombre = val)}
+					onChangeText={(val) => (this.ArticuloG.Nombre_Articulo = val)}
 				></TextInput>
 				<TextInput
 					style={styles.InputStyle}
 					placeholder="Descripcion:"
-					onChangeText={(val) => (this.Articulo.Descripcion_Articulo = val)}
+					onChangeText={(val) => (this.ArticuloG.Descripcion_Articulo = val)}
+				></TextInput>
+				<TextInput
+					style={styles.InputStyle}
+					placeholder="Fecha Registro :"
+					onChangeText={(val) => (this.ArticuloG.Fecha_Registro = val)}
 				></TextInput>
 				{/* <TextInput
 					style={styles.InputStyle}
@@ -44,17 +55,18 @@ class NewArticulo extends React.Component {
 					color="#0466C8"
 					onPress={async () => {
 						await this.GuardarArticulo();
-						this.props.navigation.navigate("ArticulosView");
+						this.props.navigation.navigate("ArticuloView");
 						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
 				<Button
 					title=" Cancelar "
 					color="#0466C8"
-					onPress={
-						() => {}
-						//	this.props.navigation.navigate("DetalleCursoView")
-					}
+					onPress={async () => {
+						// await this.GuardarArticulo();
+						//this.props.navigation.navigate("ArticuloView");
+						//this.props.navigation.navigate("DetalleCursoView");
+					}}
 				></Button>
 			</View>
 		);

@@ -28,7 +28,7 @@ class ArticuloView extends React.Component {
 	render() {
 		return (
 			<ScrollView>
-				<Text>Detalle de Articulo</Text>
+				<Text style={styles.Title}>Detalle de Articulo</Text>
 				<Button
 					title="Nuevo Articulo"
 					color="#0466c8"
@@ -55,3 +55,15 @@ class ArticuloView extends React.Component {
 	}
 }
 export { ArticuloView };
+const styles = StyleSheet.create({
+	Title: {
+		color: "#252422",
+		fontSize: 25,
+	},
+	InputStyle: {
+		padding: 10,
+		margin: 10,
+		borderWidth: 2,
+		borderRadius: 3,
+	},
+});

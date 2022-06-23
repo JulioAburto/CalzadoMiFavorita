@@ -9,12 +9,14 @@ import { CompraView } from "./CompraView";
 import { DetalleCompraView } from "./DetalleCompraView";
 import { NewArticulo } from "./NewArticulo";
 import { ArticuloView } from "./ArticuloView";
+import { ProveedorView } from "./ProveedorView";
 export default function VistaPrincipal() {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
 			<Stack.Screen name="CompraView" component={CompraView} />
 			<Stack.Screen name="DetalleCompraView" component={DetalleCompraView} />
 			<Stack.Screen name="NewArticulo" component={NewArticulo} />
+			<Stack.Screen name="ProveedorView" component={ProveedorView} />
 		
 		</Stack.Navigator>
 	);
