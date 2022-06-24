@@ -21,10 +21,10 @@ class ArticuloView extends React.Component {
 			Dataset: Articulos,
 		});
 	};
-	GuardarArticulo = async (Articulop = new Articulo()) => {
+	/* GuardarArticulo = async (Articulop = new Articulo()) => {
 		await Articulop.Save("Id_Articulo");
 		this.props.navigation.navigate("ArticuloView");
-	};
+	}; */
 	render() {
 		return (
 			<ScrollView>
