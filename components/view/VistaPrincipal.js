@@ -16,7 +16,9 @@ export default function VistaPrincipal() {
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
 			<Stack.Screen name="CompraView" component={CompraView} />
 			<Stack.Screen name="DetalleCompraView" component={DetalleCompraView} />
+			<Stack.Screen name="ArticuloView" component={ArticuloView} />
 			<Stack.Screen name="NewArticulo" component={NewArticulo} />
+			<Stack.Screen name="ProveedorView" component={ProveedorView} />
 			<Stack.Screen name="NewProveedor" component={NewProveedor} />
 		
 		</Stack.Navigator>
