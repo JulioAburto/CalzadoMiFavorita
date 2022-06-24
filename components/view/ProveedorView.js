@@ -21,10 +21,11 @@ class ProveedorView extends React.Component {
 		});
 	};
 
-	/* GuardarProveedor = async (Bloquep = new Proveedor()) => {
+	GuardarProveedor = async (Bloquep = new Proveedor()) => {
 		await Bloquep.Save("Id_Proveedor");
+
 		this.props.navigation.navigate("ProveedorView");
-	}; */
+	};
 
 	render() {
 		return (
@@ -34,9 +35,8 @@ class ProveedorView extends React.Component {
 					title="Nuevo Proveedor"
 					color="#0466C8"
 					onPress={() =>
-						this.props.navigation.navigate("NewProveedor", 
-						{
-							CargarProveedores: this.CargarProveedores,
+						this.props.navigation.navigate("NewProveedor", {
+							GuardarProveedor: this.GuardarProveedor,
 						})
 					}
 				></Button>

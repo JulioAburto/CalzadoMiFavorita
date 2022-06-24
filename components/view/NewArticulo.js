@@ -55,7 +55,7 @@ class NewArticulo extends React.Component {
 					color="#0466C8"
 					onPress={async () => {
 						await this.GuardarArticulo();
-						this.props.navigation.navigate("ArticuloView");
+						this.props.navigation.navigate("CompraView");
 						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>

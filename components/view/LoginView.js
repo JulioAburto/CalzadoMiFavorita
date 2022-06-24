@@ -7,7 +7,7 @@ const LoginView = (props) => {
 			</View>
 			<Image
 				source={require("../../img/sneakers.png")}
-				style={{ width: 150, height: 150, marginBottom: 15, marginLeft: 120 }}
+				style={{ width: 140, height: 140, marginBottom: 15, marginLeft: 120 }}
 			/>
 			<View style={styles.ContenedorOp}>
 				<Text style={styles.Title}>Log In</Text>
@@ -53,9 +53,9 @@ const styles = StyleSheet.create({
 	},
 	Title: {
 		color: "#001845",
-		fontSize: 26,
+		fontSize: 30,
 		fontWeight: 800,
-		marginLeft: "10%",
+		marginLeft: "5%",
 	},
 	ContenedorOp: {
 		backgroundColor: "#ced4da",
