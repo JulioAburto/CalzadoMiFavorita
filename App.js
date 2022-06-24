@@ -10,6 +10,8 @@ import { MainView } from "./components/view/MainView";
 import { NewProveedor } from "./components/view/NewProveedor";
 import { NewArticulo } from "./components/view/NewArticulo";
 import { ArticuloView } from "./components/view/ArticuloView";
+import { ProveedorView } from "./components/view/ProveedorView";
+
 export default function App() {
 	return (
 		<NavigationContainer>
