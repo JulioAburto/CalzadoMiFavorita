@@ -25,19 +25,23 @@ class DetalleCompraView extends React.Component {
 		Art.Id_Articulo = Detalle.Id_Articulo;
 		await Art.Save("Id_Articulo");
 		this.props.navigation.navigate("DetalleCompraView");
-		//	this.props.navigation.navigate("FrmContenido", { Dataset: this.Curso });
 	};
-	// GuardarDetalle = async (Detalle = new Detalle_Compra()) => {
-	// 	Detalle.Id_Compra = this.state.Compra.Id_Compra;
-	// 	await Detalle.Save("Id_DetalleCompra");
-	// 	const Detalles = await this.state.Compra.Detalle_Compra.get();
-	// 	this.setState({ Dataset: Detalles });
-	// 	this.props.navigation.navigate("DetalleCompraView");
-	// };
+	GuardarBloque = async (Detalle = new Detalle_Compra()) => {
+		Detalle.Id_Compra = this.state.Compra.Id_Compra;
+		await Detalle.Save("Id_Compra");
+		const Detalles = await this.state.Compra.Detalle_Compra.get();
+		this.setState({ Dataset: Detalles });
+		this.props.navigation.navigate("DetalleCompraView");
+	};
 	render() {
 		return (
 			<ScrollView>
-				<Text style={styles.Title}>Detalle</Text>
+				{/* <Text style={styles.Title}>Detalle</Text> */}
+				<Button
+					title="Nueva Factura Compra"
+					color="#0466C8"
+					onPress={() => this.props.navigation.navigate("NewDetalleCompra")}
+				></Button>
 				<Button
 					title=" ← Regresar"
 					color="#0466C8"

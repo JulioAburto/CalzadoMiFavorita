@@ -11,6 +11,8 @@ import { NewArticulo } from "./NewArticulo";
 import { ArticuloView } from "./ArticuloView";
 import { ProveedorView } from "./ProveedorView";
 import { NewProveedor } from "./NewProveedor";
+import { NewDetalleCompra } from "./NewDetalleCompra";
+
 export default function VistaPrincipal() {
 	return (
 		<Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -20,6 +22,7 @@ export default function VistaPrincipal() {
 			<Stack.Screen name="NewArticulo" component={NewArticulo} />
 			<Stack.Screen name="ProveedorView" component={ProveedorView} />
 			<Stack.Screen name="NewProveedor" component={NewProveedor} />
+			<Stack.Screen name="NewDetalleCompra" component={NewDetalleCompra} />
 		
 		</Stack.Navigator>
 	);
