@@ -4,6 +4,7 @@ const LoginView = (props) => {
 		<View style={styles.contenedorP}>
 			<View style={styles.contenedorS}>
 				<Text style={styles.Title}>Bienvenido al Sistema</Text>
+				<Text style={styles.Title}>Calazado Mi Favorita</Text>
 			</View>
 			<Image
 				source={require("../../img/sneakers.png")}
