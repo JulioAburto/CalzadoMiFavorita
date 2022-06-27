@@ -6,7 +6,7 @@
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 3500
 	},
 	{
@@ -16,7 +16,7 @@
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01T",
 		"Total_Costo": 6000
 	},
 	{
@@ -26,7 +26,7 @@
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01T",
 		"Total_Costo": 5000
 	},
 	{
@@ -36,7 +36,7 @@
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 2500
 	},
 	{
@@ -46,7 +46,7 @@
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 3500
 	},
 	{
@@ -56,7 +56,7 @@
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 3000,
 		"Precio_UnitarioVenta": 3500,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 6000
 	},
 	{
@@ -66,7 +66,7 @@
 		"Cantidad": 2,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 5000
 	},
 	{
@@ -76,7 +76,7 @@
 		"Cantidad": 1,
 		"Precio_UnitarioCompra": 2500,
 		"Precio_UnitarioVenta": 3000,
-		"Fecha": "1900-01-01T00:00:00",
+		"Fecha": "1900-01-01",
 		"Total_Costo": 2500
 	}
 ]

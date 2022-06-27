@@ -15,7 +15,7 @@ const LoginView = (props) => {
 					style={styles.InputStyle}
 					placeholder="UserName"
 					textContentType="username"
-					autoFocus="true"
+					// autoFocus="true"
 					placeholderTextColor="#001233"
 				></TextInput>
 				<TextInput

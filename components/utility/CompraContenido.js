@@ -54,19 +54,23 @@ export { CompraContenido };
 
 const styles = StyleSheet.create({
 	CardStyle: {
-		flex: 4,
 		backgroundColor: "#33415C",
+		flex: 1,
+		alignSelf:"stretch",
+		flexDirection:"column",
 		padding: 20,
 		margin: 10,
 		borderRadius: 10,
 	},
 	Title: {
 		color: "#f8f9fa",
-		fontSize: 25,
+		fontSize: 20,
 	},
 	Atribute: {
+		flex:1,
+		  alignSelf: "stretch",
 		color: "#e9ecef",
-		fontSize: 16,
+		fontSize: 13,
 	},
 	Resumen: {
 		color: "#e9ecef",

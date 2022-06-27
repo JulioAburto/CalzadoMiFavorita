@@ -4,14 +4,15 @@ const CardCompraComp = (props) => {
 	return (
 		<View style={styles.CardStyle}>
 			<Text style={styles.Title}>Factura Compra</Text>
-			{/* <Text style={styles.Atribute}>Id: {props.data.IdCurso} </Text> */}
-			<Text style={styles.Atribute}>Compra: {props.data.Id_Compra} </Text>
-			{/* <Text style={styles.Resumen}>Resumen: {props.data.ResumenCurso} </Text> */}
-			<Text style={styles.Atribute}>Usuario: {props.data.Id_Usuario} </Text>
-			<Text style={styles.Atribute}>Proveedor: {props.data.Id_Proveedor} </Text>
-			<Text style={styles.Atribute}>Fecha de Compra: {props.data.Fecha_Compra} </Text>
-			<Text style={styles.Atribute}>Costo Total: C${props.data.Total_Costo} </Text>
-
+			<View style={styles.CardStyles1}>
+				<Text style={styles.Atribute}>Codigo Compra: {props.data.Id_Compra} </Text>
+				<Text style={styles.Atribute}>Codigo Usuario: {props.data.Id_Usuario} </Text>
+				<Text style={styles.Atribute}>Codigo Proveedor: {props.data.Id_Proveedor} </Text>
+			</View>
+			<View style={styles.CardStyles1}>
+				<Text style={styles.Atribute}>Fecha: {props.data.Fecha_Compra} </Text>
+				<Text style={styles.Atribute}>Costo Total: C${props.data.Total_Costo} </Text>
+			</View>
 			<Button
 				title="Ver Detalle de Compra"
 				color="#0466C8"
@@ -33,13 +34,32 @@ const styles = StyleSheet.create({
 		margin: 10,
 		borderRadius: 10,
 	},
+	CardStyles1: {
+		flex: 1,
+		alignSelf: "stretch",
+		flexDirection: "row",
+		backgroundColor: "#33415C",
+		padding: 0,
+		margin: 0,
+		borderRadius: 10,
+		// borderWidth: 1,
+		// borderColor: "#001233",
+		// padding: 5,
+		// margin: 5,
+	},
 	Title: {
 		color: "#f8f9fa",
 		fontSize: 25,
 	},
 	Atribute: {
+		flex: 1,
+		alignSelf: "stretch",
 		color: "#e9ecef",
-		fontSize: 16,
+		fontSize: 14,
+		borderWidth: 2.5,
+		borderColor: "#5C677D",
+		padding: 5,
+		height: 50,
 	},
 	Resumen: {
 		color: "#e9ecef",

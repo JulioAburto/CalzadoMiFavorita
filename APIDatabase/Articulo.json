@@ -7,7 +7,7 @@
 		"Código_Articulo": 0,
 		"Nombre_Articulo": "Zapato Nike",
 		"Descripcion_Articulo": "Zapato para realizar deportes",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	},
 	{
@@ -18,7 +18,7 @@
 		"Código_Articulo": 1,
 		"Nombre_Articulo": "Sandalia Rosita",
 		"Descripcion_Articulo": "Sandalia para damas",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	},
 	{
@@ -29,7 +29,7 @@
 		"Código_Articulo": 2,
 		"Nombre_Articulo": "Zapato Artezano",
 		"Descripcion_Articulo": "Zapato casual para toda ocasion",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": false
 	},
 	{
@@ -40,7 +40,7 @@
 		"Código_Articulo": 3,
 		"Nombre_Articulo": "Zapato Adidas",
 		"Descripcion_Articulo": "Zapato de corte bajo para dama",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	},
 	{
@@ -51,7 +51,7 @@
 		"Código_Articulo": 0,
 		"Nombre_Articulo": "Zapato Nike",
 		"Descripcion_Articulo": "Zapato para realizar deportes",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	},
 	{
@@ -62,7 +62,7 @@
 		"Código_Articulo": 1,
 		"Nombre_Articulo": "Sandalia Air Jordan",
 		"Descripcion_Articulo": "Sandalia para damas",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	},
 	{
@@ -73,7 +73,7 @@
 		"Código_Articulo": 2,
 		"Nombre_Articulo": "Zapato Bota Cuero",
 		"Descripcion_Articulo": "Zapato casual para toda ocasion",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": false
 	},
 	{
@@ -84,7 +84,7 @@
 		"Código_Articulo": 3,
 		"Nombre_Articulo": "Zapato Formales",
 		"Descripcion_Articulo": "Zapato de corte bajo para dama",
-		"Fecha_Registro": "1900-01-01T00:00:00",
+		"Fecha_Registro": "1900-01-01",
 		"Estado": true
 	}
 ]

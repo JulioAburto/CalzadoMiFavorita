@@ -33,12 +33,13 @@ class DetalleCompraView extends React.Component {
 		this.setState({ Dataset: Detalles });
 		this.props.navigation.navigate("DetalleCompraView");
 	};
+
 	render() {
 		return (
 			<ScrollView>
 				{/* <Text style={styles.Title}>Detalle</Text> */}
 				<Button
-					title="Nueva Factura Compra"
+					title="Nueva Detalle de Factura Compra"
 					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("NewDetalleCompra")}
 				></Button>
@@ -51,16 +52,22 @@ class DetalleCompraView extends React.Component {
 				{this.state.Dataset.map((p) => {
 					return (
 						<View style={styles.CardStyles} key={p.Id_DetalleCompra}>
-							<Text style={styles.TitleP}>Factura Compra</Text>
-							{/* <Text style={styles.Atribute}>Identificador compra: {p.Id_Compra}</Text>
-							<Text style={styles.Atribute}>Id Detalle Compra: {p.Id_DetalleCompra}</Text>
-							<Text style={styles.Atribute}>Id Compra: {p.Id_Compra}</Text>
-							<Text style={styles.Atribute}>Id Articulo: {p.Id_Articulo}</Text> */}
-							<Text style={styles.Atribute}>Cantidad: {p.Cantidad}</Text>
-							<Text style={styles.Atribute}>Precio Unitario Compra: {p.Precio_UnitarioCompra}</Text>
-							<Text style={styles.Atribute}>Precio Unitario Venta: {p.Precio_UnitarioVenta}</Text>
-							<Text style={styles.Atribute}>Fecha: {p.Fecha}</Text>
-							<Text style={styles.Atribute}>Total Costo: {p.Total_Costo}</Text>
+							<Text style={styles.TitleP}>Detalle de Factura Compra</Text>
+							<View style={styles.CardStyles1}>
+								<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
+								{/* <Text style={styles.Atribute}>Fecha:{p.Fecha}</Text> */}
+								{/* <Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
+								<Text style={styles.Atribute}>Total Costo: C${p.Total_Costo}</Text> */}
+								<Text style={styles.Atribute}>P/U Compra: C${p.Precio_UnitarioCompra}</Text>
+							</View>
+							<View style={styles.CardStyles1}>
+								{/* <Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
+								<Text style={styles.Atribute}>P/U Compra: C${p.Precio_UnitarioCompra}</Text>
+							<Text style={styles.Atribute}>P/U Venta: C${p.Precio_UnitarioVenta}</Text> */}
+								<Text style={styles.Atribute}>P/U Venta: C${p.Precio_UnitarioVenta}</Text>
+								<Text style={styles.Atribute}>Total Costo: C${p.Total_Costo}</Text>
+							</View>
+
 							<CompraContenido
 								Compra={this.state.Compra}
 								NuevoContenido={this.NuevoContenido}
@@ -83,16 +90,35 @@ const styles = StyleSheet.create({
 		margin: 10,
 		borderRadius: 10,
 	},
+	CardStyles1: {
+		flex: 1,
+		alignSelf: "stretch",
+		flexDirection: "row",
+		backgroundColor: "#001845",
+		padding: 0,
+		margin: 0,
+		borderRadius: 10,
+		// borderWidth: 1,
+		// borderColor: "#001233",
+		// padding: 5,
+		// margin: 5,
+	},
 	TitleP: {
 		color: "#f8f9fa",
-		fontSize: 28,
+		fontSize: 20,
 	},
 	Title: {
 		color: "#f8f9fa",
-		fontSize: 25,
+		fontSize: 20,
 	},
 	Atribute: {
+		flex: 1,
+		alignSelf: "stretch",
 		color: "#e9ecef",
-		fontSize: 16,
+		fontSize: 14,
+		borderWidth: 2.5,
+		borderColor: "#33415C",
+		padding: 5,
+		height: 50,
 	},
 });
