@@ -41,8 +41,8 @@ class CompraView extends React.Component {
 					title="Nueva Factura De Compra"
 					color="#0466C8"
 					onPress={() =>
-						this.props.navigation.navigate("", {
-							//CargarProveedores: this.CargarProveedores,
+						this.props.navigation.navigate("NewGuardarCompra", {
+							CargarCompra: this.CargarCompra,
 						})
 					}
 				></Button>

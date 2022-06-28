@@ -12,6 +12,7 @@ import { NewArticulo } from "./components/view/NewArticulo";
 import { ArticuloView } from "./components/view/ArticuloView";
 import { ProveedorView } from "./components/view/ProveedorView";
 import { NewDetalleCompra } from "./components/view/NewDetalleCompra";
+import { NewGuardarCompra } from "./components/view/NewGuardarCompra";
 
 export default function App() {
 	return (
