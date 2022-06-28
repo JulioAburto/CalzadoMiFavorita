@@ -3,84 +3,84 @@
        "Id_Proveedor":1,
        "Nombre_proveedor":"Shoes",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"Shoes@example.com"
     },
     {
        "Id_Proveedor":2,
        "Nombre_proveedor":"INTOSA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"INTOSA@example.com"
     },
     {
        "Id_Proveedor":3,
        "Nombre_proveedor":"TECALZA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"TECALZA@example.com"
     },
     {
        "Id_Proveedor":4,
        "Nombre_proveedor":"Gloss Shop",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"GlossShop@example.com"
     },
     {
        "Id_Proveedor":5,
        "Nombre_proveedor":"Shoes",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"Shoes@example.com"
     },
     {
        "Id_Proveedor":6,
        "Nombre_proveedor":"INTOSA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"INTOSA@example.com"
     },
     {
        "Id_Proveedor":7,
        "Nombre_proveedor":"TECALZA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"TECALZA@example.com"
     },
     {
        "Id_Proveedor":8,
        "Nombre_proveedor":"Gloss Shop",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"GlossShop@example.com"
     },
     {
        "Id_Proveedor":9,
        "Nombre_proveedor":"Shoes",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"Shoes@example.com"
     },
     {
        "Id_Proveedor":10,
        "Nombre_proveedor":"INTOSA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"INTOSA@example.com"
     },
     {
        "Id_Proveedor":11,
        "Nombre_proveedor":"TECALZA",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"TECALZA@example.com"
     },
     {
        "Id_Proveedor":12,
        "Nombre_proveedor":"Gloss Shop",
        "Dirección":"Managua",
-       "Teléfono":0,
+       "Teléfono":22254598,
        "Correo":"GlossShop@example.com"
     }
  ]

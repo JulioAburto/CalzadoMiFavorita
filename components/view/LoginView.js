@@ -4,6 +4,7 @@ const LoginView = (props) => {
 		<View style={styles.contenedorP}>
 			<View style={styles.contenedorS}>
 				<Text style={styles.Title}>Bienvenido al Sistema</Text>
+				<Text style={styles.Title}>Calzado Mi Favorita</Text>
 			</View>
 			<Image
 				source={require("../../img/sneakers.png")}
@@ -15,7 +16,7 @@ const LoginView = (props) => {
 					style={styles.InputStyle}
 					placeholder="UserName"
 					textContentType="username"
-					autoFocus="true"
+					// autoFocus="true"
 					placeholderTextColor="#001233"
 				></TextInput>
 				<TextInput
@@ -55,7 +56,8 @@ const styles = StyleSheet.create({
 		color: "#001845",
 		fontSize: 30,
 		fontWeight: 800,
-		marginLeft: "5%",
+		alignContent: "center",
+		textAlign: "center",
 	},
 	ContenedorOp: {
 		backgroundColor: "#ced4da",

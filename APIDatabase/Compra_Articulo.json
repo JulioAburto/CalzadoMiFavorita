@@ -3,84 +3,84 @@
 		"Id_Compra": 1,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2000
 	},
 	{
 		"Id_Compra": 2,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 1,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 3000
 	},
 	{
 		"Id_Compra": 3,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2500
 	},
 	{
 		"Id_Compra": 4,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 3,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 4000
 	},
 	{
 		"Id_Compra": 5,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2000
 	},
 	{
 		"Id_Compra": 6,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 1,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 3000
 	},
 	{
 		"Id_Compra": 7,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2500
 	},
 	{
 		"Id_Compra": 8,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 3,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 4000
 	},
 	{
 		"Id_Compra": 9,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2000
 	},
 	{
 		"Id_Compra": 10,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 1,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 3000
 	},
 	{
 		"Id_Compra": 11,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 2,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 2500
 	},
 	{
 		"Id_Compra": 12,
 		"Id_Usuario": 4,
 		"Id_Proveedor": 3,
-		"Fecha_Compra": "1900-01-01T00:00:00",
+		"Fecha_Compra": "1900-01-01",
 		"Total_Costo": 4000
 	}
 ]
