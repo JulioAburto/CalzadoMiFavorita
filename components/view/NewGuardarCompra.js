@@ -68,7 +68,6 @@ class NewGuardarCompra extends React.Component {
         this.Compra.Fecha_Compra = this.state.fecha;
 
         await this.Compra.Save("Id_Compra");
-
         for (let index = 0; index < this.state.detallecompra.length; index++) {
             const detallecompra = this.state.detallecompra[index];
             detallecompra.Id_Articulo = this.Compra.Id_Compra;
