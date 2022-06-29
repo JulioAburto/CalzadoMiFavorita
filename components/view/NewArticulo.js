@@ -12,13 +12,16 @@ class NewArticulo extends React.Component {
 		// this.cargarContenidos = this.props.route.params.cargarContenidos;
 		this.props = props;
 		this.ArticuloG = new Articulo();
+
 		this.state = {
 			Articulos: [],
+			fechaActual: Date().toString(),
 		};
 		this.CargarArticulo = this.props.route.params.CargarArticulo;
 	}
 
 	GuardarArticulo = async () => {
+		this.ArticuloG.Fecha_Registro = this.state.fechaActual;
 		await this.ArticuloG.Save("Id_Articulo");
 		this.CargarArticulo();
 	};
@@ -37,11 +40,14 @@ class NewArticulo extends React.Component {
 					style={styles.InputStyle}
 					placeholder="Descripcion:"
 					onChangeText={(val) => (this.ArticuloG.Descripcion_Articulo = val)}
+					numberOfLines={4}
 				></TextInput>
 				<TextInput
 					style={styles.InputStyle}
 					placeholder="Fecha Registro :"
-					onChangeText={(val) => (this.ArticuloG.Fecha_Registro = val)}
+
+					value={this.state.fechaActual}
+				//	onChangeText={(val) => (this.ArticuloG.fechaActual)}
 				></TextInput>
 				{/* <TextInput
 					style={styles.InputStyle}

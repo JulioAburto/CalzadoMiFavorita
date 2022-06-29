@@ -7,7 +7,7 @@ const CardArticuloComp = (props) => {
 			{/* <Text style={styles.Atribute}>Id: {props.data.IdCurso} </Text> */}
 			<Text style={styles.Atribute}>Nombre: {props.data.Nombre_Articulo} </Text>
 			{/* <Text style={styles.Resumen}>Resumen: {props.data.ResumenCurso} </Text> */}
-			<Text style={styles.Atribute}>Descripcion Articulo {props.data.Descripcion_Articulo} </Text>
+			<Text style={styles.Atribute} numberOfLines={4}>Descripcion Articulo {props.data.Descripcion_Articulo} </Text>
 			<Text style={styles.Atribute}>Fecha Registro: {props.data.Fecha_Registro} </Text>
 		</View>
 	);

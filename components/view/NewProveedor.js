@@ -30,6 +30,7 @@ class NewProveedor extends React.Component {
 					style={styles.InputStyle}
 					placeholder="Direccion: "
 					onChangeText={(val) => (this.ProveedorBlock.Dirección = val)}
+					numberOfLines={4}
 				></TextInput>
 				<TextInput
 					style={styles.InputStyle}

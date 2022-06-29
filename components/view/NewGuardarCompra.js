@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from "react-native";
-import {} from "module";
 import { Compra_Articulo } from "../../Model/Compra_Articulo";
 import { Detalle_Compra } from "../../Model/Detalle_Compra";
 import { DetalleCompraView } from "./DetalleCompraView";

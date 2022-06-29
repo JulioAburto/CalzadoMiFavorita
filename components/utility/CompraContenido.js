@@ -40,7 +40,9 @@ class CompraContenido extends React.Component {
 						return (
 							<View style={styles.CardStyle} key={p.Id_Articulo}>
 								<Text style={styles.Atribute}>Nombre: {p.Nombre_Articulo}</Text>
-								<Text style={styles.Atribute}>Descripcion: {p.Descripcion_Articulo}</Text>
+								<Text style={styles.Atribute} numberOfLines={4}>
+									Descripcion: {p.Descripcion_Articulo}
+								</Text>
 								<Text style={styles.Atribute}>Fecha de Registro: {p.Fecha_Registro}</Text>
 							</View>
 						);
@@ -56,8 +58,8 @@ const styles = StyleSheet.create({
 	CardStyle: {
 		backgroundColor: "#33415C",
 		flex: 1,
-		alignSelf:"stretch",
-		flexDirection:"column",
+		alignSelf: "stretch",
+		flexDirection: "column",
 		padding: 20,
 		margin: 10,
 		borderRadius: 10,
@@ -67,8 +69,8 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 	},
 	Atribute: {
-		flex:1,
-		  alignSelf: "stretch",
+		flex: 1,
+		alignSelf: "stretch",
 		color: "#e9ecef",
 		fontSize: 13,
 	},
