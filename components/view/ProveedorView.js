@@ -22,11 +22,11 @@ class ProveedorView extends React.Component {
 		});
 	};
 
-	GuardarProveedor = async (Bloquep = new Proveedor()) => {
-		await Bloquep.Save("Id_Proveedor");
+	// GuardarProveedor = async (Bloquep = new Proveedor()) => {
+	// 	await Bloquep.Save("Id_Proveedor");
 
-		this.props.navigation.navigate("ProveedorView");
-	};
+	// 	this.props.navigation.navigate("ProveedorView");
+	// };
 	SeleccionProveedor = async (pk, name) => {
 		await this.props.route.params.SeleccionProveedor(pk, name);
 		this.props.navigation.navigate("NewGuardarCompra");
@@ -42,7 +42,7 @@ class ProveedorView extends React.Component {
 					color="#0466C8"
 					onPress={() =>
 						this.props.navigation.navigate("NewProveedor", {
-							GuardarProveedor: this.GuardarProveedor,
+							CargarProveedores: this.CargarProveedores,
 						})
 					}
 				></Button>
@@ -57,7 +57,7 @@ class ProveedorView extends React.Component {
 					this.state.Dataset.map((proveedor) => (
 						<CardProveedorComp
 							key={proveedor.Id_Proveedor}
-							SeleccionProveedor={this.SeleccionProveedor}
+							// SeleccionProveedor={this.SeleccionProveedor}
 							data={proveedor}
 							
 						/>

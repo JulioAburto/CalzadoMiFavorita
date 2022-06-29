@@ -12,10 +12,10 @@ class NewProveedor extends React.Component {
 		};
 		this.CargarProveedores = this.props.route.params.CargarProveedores;
 	}
-	// GuardarProveedor = async () => {
-	// 	await this.ProveedorBlock.Save("Id_Proveedor");
-	// 	this.CargarProveedores();
-	// };
+	GuardarProveedor = async () => {
+		await this.ProveedorBlock.Save("Id_Proveedor");
+		this.CargarProveedores();
+	};
 
 	render() {
 		return (
@@ -46,7 +46,7 @@ class NewProveedor extends React.Component {
 					title=" Guardar "
 					color="#0466C8"
 					onPress={async () => {
-						await this.props.route.params.GuardarProveedor(this.ProveedorBlock);
+						await this.GuardarProveedor();
 						this.props.navigation.navigate("CompraView");
 					}}
 				></Button>
