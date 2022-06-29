@@ -38,11 +38,11 @@ class DetalleCompraView extends React.Component {
 		return (
 			<ScrollView>
 				{/* <Text style={styles.Title}>Detalle</Text> */}
-				<Button
+				{/* <Button
 					title="Nueva Detalle de Factura Compra"
 					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("NewDetalleCompra")}
-				></Button>
+				></Button> */}
 				<Button
 					title=" ← Regresar"
 					color="#0466C8"

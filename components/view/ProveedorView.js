@@ -9,6 +9,7 @@ class ProveedorView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
+			
 		};
 		this.Proveedor = new Proveedor();
 		this.CargarProveedores();
@@ -25,6 +26,11 @@ class ProveedorView extends React.Component {
 		await Bloquep.Save("Id_Proveedor");
 
 		this.props.navigation.navigate("ProveedorView");
+	};
+	SeleccionProveedor = async (pk, name) => {
+		await this.props.route.params.SeleccionProveedor(pk, name);
+		this.props.navigation.navigate("NewGuardarCompra");
+		
 	};
 
 	render() {
@@ -49,7 +55,12 @@ class ProveedorView extends React.Component {
 					<ActivityIndicator />
 				) : (
 					this.state.Dataset.map((proveedor) => (
-						<CardProveedorComp key={proveedor.Id_Proveedor} data={proveedor} />
+						<CardProveedorComp
+							key={proveedor.Id_Proveedor}
+							SeleccionProveedor={this.SeleccionProveedor}
+							data={proveedor}
+							
+						/>
 					))
 				)}
 			</ScrollView>

@@ -10,14 +10,13 @@ const CardProveedorComp = (props) => {
 			<Text style={styles.Atribute}>Dirección: {props.data.Dirección} </Text>
 			<Text style={styles.Atribute}>Teléfono: {props.data.Teléfono} </Text>
 			<Text style={styles.Atribute}>Correo: {props.data.Correo} </Text>
-
-			{/* <Button
-				title="Ver Detalle de Proveedores"
+			<Button
+				title="✓"
 				color="#0466C8"
 				onPress={() => {
-					//props.cargarBloques(props.data);
+					props.SeleccionProveedor(props.data.Id_Proveedor, props.data.Nombre_proveedor);
 				}}
-			></Button> */}
+			></Button>
 		</View>
 	);
 };
