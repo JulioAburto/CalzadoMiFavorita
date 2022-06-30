@@ -57,7 +57,7 @@ class ProveedorView extends React.Component {
 					this.state.Dataset.map((proveedor) => (
 						<CardProveedorComp
 							key={proveedor.Id_Proveedor}
-							// SeleccionProveedor={this.SeleccionProveedor}
+							SeleccionProveedor={this.SeleccionProveedor}
 							data={proveedor}
 							
 						/>

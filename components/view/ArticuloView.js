@@ -10,6 +10,7 @@ class ArticuloView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
+			seleccion: this.props.route.params ?? false,
 		};
 		this.Articulo = new Articulo();
 		this.CargarArticulo();
@@ -20,6 +21,10 @@ class ArticuloView extends React.Component {
 			isLoading: false,
 			Dataset: Articulos,
 		});
+	};
+	SeleccionArticulo = async (llp, nombre) => {
+		this.props.route.params.SeleccionArticulo(llp, nombre);
+		this.props.navigation.navigate("FrmArticuloNuevoFact");
 	};
 	/* GuardarArticulo = async (Articulop = new Articulo()) => {
 		await Articulop.Save("Id_Articulo");
@@ -47,7 +52,12 @@ class ArticuloView extends React.Component {
 					<ActivityIndicator />
 				) : (
 					this.state.Dataset.map((articulo) => (
-						<CardArticuloComp key={articulo.Id_Articulo} data={articulo} />
+						<CardArticuloComp
+							key={articulo.Id_Articulo}
+							data={articulo}
+							SeleccionArticulo={this.SeleccionArticulo}
+							seleccion={this.state.seleccion}
+						/>
 					))
 				)}
 			</ScrollView>

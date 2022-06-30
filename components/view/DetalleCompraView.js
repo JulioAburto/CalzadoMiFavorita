@@ -12,28 +12,30 @@ class DetalleCompraView extends React.Component {
 		this.state = {
 			Dataset: this.props.route.params.Dataset ?? [],
 			Compra: this.props.route.params.Compra,
+			Detalle: this.props.route.params.Detalle,
 		};
+		//this.CargarProducto(this.data);
 	}
-	NuevoContenido = async (Detalle, cargarContenidos) => {
-		this.props.navigation.navigate("NewArticulo", {
-			Detalle: Detalle,
-			cargarContenidos: cargarContenidos,
-			GuardarArticulo: this.GuardarArticulo,
-		});
-	};
-	GuardarArticulo = async (Detalle = new Detalle_Compra(), Art = new Articulo()) => {
-		Art.Id_Articulo = Detalle.Id_Articulo;
-		await Art.Save("Id_Articulo");
-		this.props.navigation.navigate("DetalleCompraView");
-	};
-	GuardarBloque = async (Detalle = new Detalle_Compra()) => {
-		Detalle.Id_Compra = this.state.Compra.Id_Compra;
-		await Detalle.Save("Id_Compra");
-		const Detalles = await this.state.Compra.Detalle_Compra.get();
-		this.setState({ Dataset: Detalles });
-		this.props.navigation.navigate("DetalleCompraView");
-	};
-
+	// NuevoContenido = async (Detalle, cargarContenidos) => {
+	// 	this.props.navigation.navigate("NewArticulo", {
+	// 		Detalle: Detalle,
+	// 		cargarContenidos: cargarContenidos,
+	// 		GuardarArticulo: this.GuardarArticulo,
+	// 	});
+	// };
+	// GuardarArticulo = async (Detalle = new Detalle_Compra(), Art = new Articulo()) => {
+	// 	Art.Id_Articulo = Detalle.Id_Articulo;
+	// 	await Art.Save("Id_Articulo");
+	// 	this.props.navigation.navigate("DetalleCompraView");
+	// };
+	// GuardarBloque = async (Detalle = new Detalle_Compra()) => {
+	// 	Detalle.Id_Compra = this.state.Compra.Id_Compra;
+	// 	await Detalle.Save("Id_Compra");
+	// 	const Detalles = await this.state.Compra.Detalle_Compra.get();
+	// 	this.setState({ Dataset: Detalles });
+	// 	this.props.navigation.navigate("DetalleCompraView");
+	// };
+	
 	render() {
 		return (
 			<ScrollView>
@@ -47,7 +49,7 @@ class DetalleCompraView extends React.Component {
 					title=" ← Regresar"
 					color="#0466C8"
 					onPress={() => this.props.navigation.navigate("CompraView")}
-				></Button>
+					></Button>
 
 				{this.state.Dataset.map((p) => {
 					return (
@@ -69,22 +71,30 @@ class DetalleCompraView extends React.Component {
 							</View>
 
 							<CompraContenido
+								key={p.Id_DetalleCompra}
 								Compra={this.state.Compra}
 								NuevoContenido={this.NuevoContenido}
 								Detalle_Compra={p}
-							></CompraContenido>
+								></CompraContenido>
 						</View>
 					);
 				})}
 			</ScrollView>
 		);
 	}
+	// CargarProducto = async (e = new Detalle_Compra()) => {
+	// 	const list = await e.Articulo.get();
+	// 	const resultado = list.filter((i) => i.Id_Articulo == e.Id_Articulo);
+	// 	this.setState({
+	// 		Dataset: resultado,
+	// 	});
+	// };
 }
 export { DetalleCompraView };
 
 const styles = StyleSheet.create({
 	CardStyles: {
-		flex: 4,
+		flex: 1,
 		backgroundColor: "#001845",
 		padding: 20,
 		margin: 10,

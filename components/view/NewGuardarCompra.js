@@ -73,6 +73,7 @@ class NewGuardarCompra extends React.Component {
 
 			await this.DetalleCompra.Save("Id_DetalleCompra");
 		}
+		return true;
 	};
 
 	render() {
@@ -109,7 +110,9 @@ class NewGuardarCompra extends React.Component {
 					color="#0466C8"
 					title="Agregar Articulo"
 					onPress={async () => {
-						//this.props.navigation.navigate("")
+						this.props.navigation.navigate("FrmArticuloNuevoFact", {
+							GuardarDetalleCompra: this.GuardarDetalleCompra,
+						});
 					}}
 				/>
 

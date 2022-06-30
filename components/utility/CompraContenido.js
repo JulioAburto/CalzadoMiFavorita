@@ -11,7 +11,7 @@ class CompraContenido extends React.Component {
 			Detalles: [],
 		};
 		this.Detalle_Compra = this.props.Detalle_Compra ?? new Detalle_Compra();
-		this.cargarContenido();
+			this.cargarContenido();
 	}
 
 	cargarContenido = async () => {
