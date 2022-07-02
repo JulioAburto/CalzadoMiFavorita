@@ -10,6 +10,7 @@ class CardDetalleComp extends React.Component {
 		this.state = {
 			DetalleComp: this.props.route.params.DetalleComp,
 			Dataset: this.props.route.params.Dataset ?? [],
+			Articulo: this.props.route.params.Articulo ?? [],
 		};
 		this.CargarArticulo(this.data);
 	}
@@ -34,12 +35,11 @@ class CardDetalleComp extends React.Component {
 		);
 	}
 
-	CargarArticulo = async (e = new TblDetalleCompra()) => {
-		const list = await e.TblArticulos.get();
-		const result = list.filter((i) => i.idarticulo == e.idarticulo);
-
+	CargarProducto = async (e = new Detalle_Compra()) => {
+		const list = await e.Articulo.get();
+		const resultado = list.filter((i) => i.Id_Articulo == e.Id_Articulo);
 		this.setState({
-			Dataset: result,
+			Articulo: resultado,
 		});
 	};
 }

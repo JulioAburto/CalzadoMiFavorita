@@ -9,19 +9,16 @@ class NewGuardarCompra extends React.Component {
 	constructor(props) {
 		super();
 		this.props = props;
-
 		this.Compra = new Compra_Articulo();
 		this.DetalleCompra = new Detalle_Compra();
-
 		this.state = {
-			Primaria: "ID",
+			Primaria: "",
 			detallecompra: [],
-			proveedor: "Proveedor",
+			proveedor: "",
 			fecha: Date().toString(),
 		};
 
 		this.keys = 0;
-
 		this.CargarCompra = this.props.route.params.CargarCompra;
 	}
 
@@ -108,6 +105,7 @@ class NewGuardarCompra extends React.Component {
 						value={this.state.fecha}
 					/>
 				</View>
+				<ScrollView style={styles.CardStyle}>
 				<Button
 					color="#0466C8"
 					title="Agregar Articulo"
@@ -119,7 +117,6 @@ class NewGuardarCompra extends React.Component {
 				/>
 
 				<Text style={styles.Title}>Detalle de Compra</Text>
-				<ScrollView style={styles.CardStyle}>
 					{this.state.detallecompra.map((c) => (
 						<CardDetalleCompraView key={c.Id_Articulo} data={c} />
 					))}
