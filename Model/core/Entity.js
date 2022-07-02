@@ -62,7 +62,7 @@ class Entity {
 		Data.push(this);
 		await AsyncStorage.setItem("@" + this.ApiMethods.Get, JSON.stringify(Data, this.replacer));
 	};
-
+	
 	replacer(key, value) {
 		if (value.get && value.set) {
 			return undefined;

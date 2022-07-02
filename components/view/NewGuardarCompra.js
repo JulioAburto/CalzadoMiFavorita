@@ -16,6 +16,7 @@ class NewGuardarCompra extends React.Component {
 			detallecompra: [],
 			proveedor: "",
 			fecha: Date().toString(),
+			Total: 0.000,
 		};
 
 		this.keys = 0;
@@ -83,6 +84,21 @@ class NewGuardarCompra extends React.Component {
 	// 	return true;
 	// };
 
+	Save = async () => {
+            this.Compra.Fecha_Compra = this.state.fecha;
+            this.Compra.Total_Costo = this.state.Total;
+
+            await this.Compra.Save("Id_Compra");
+
+            for (let index = 0; index < this.state.detallecompra.length; index++) {
+                const detallecompra = this.state.detallecompra[index];
+                detallecompra.Id_Compra = this.Compra.Id_Compra;
+
+                await this.DetalleCompra.Save("Id_DetalleCompra");
+            }
+            return true;
+    }
+
 	render() {
 		return (
 			<ScrollView style={styles.CardStyle}>
@@ -139,10 +155,11 @@ class NewGuardarCompra extends React.Component {
 						if (response) {
 							await this.CargarCompra();
 							this.setState({
-								Primaria: "ID",
+								Primaria: "",
 								detallecompra: [],
-								proveedor: "Proveedor",
+								proveedor: "",
 								fecha: Date().toString(),
+								Total: 0.000,
 							});
 
 							this.props.navigation.navigate("CompraView");
