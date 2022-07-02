@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, ActivityIndicator } from "react-native";
 import { Detalle_Compra } from "../../Model/Detalle_Compra";
 class CardDetalleCompraView extends React.Component {
 	constructor(props) {
@@ -22,10 +22,10 @@ class CardDetalleCompraView extends React.Component {
 	render() {
 		return (
 			<View>
-				{/* {this.state.Dataset.map((c) => (
-					<Text key={c.Id_Articulo}>Nombre de producto: {m.Nombre_Articulo}</Text>
-				))} */}
-				<Text style={styles.Atribute}>Precio: {this.props.data.Precio_UnitarioCompra}</Text>
+				 {this.state.Articulo.map((c) => (
+					<Text key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
+				))}
+				 <Text style={styles.Atribute}>Precio: {this.props.data.Precio_UnitarioCompra}</Text>
 				<Text style={styles.Atribute}>Cantidad: {this.props.data.Cantidad}</Text>
 				<Text style={styles.Atribute}>Total: {this.props.data.Total_Costo}</Text>
 

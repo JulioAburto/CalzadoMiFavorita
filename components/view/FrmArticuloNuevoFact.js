@@ -33,7 +33,11 @@ class FrmArticuloNuevoFact extends React.Component {
 						placeholder="Articulo"
 						value={this.state.articulo}
 					></TextInput>
-					<TextInput style={styles.InputStyle} placeholder="ID" value={this.state.LLP}></TextInput>
+					<TextInput 
+						style={styles.InputStyle} 
+						placeholder="ID" 
+						value={this.state.LLP}>
+					</TextInput>
 					<Button
 						color="#0466C8"
 						title="+"
@@ -47,15 +51,27 @@ class FrmArticuloNuevoFact extends React.Component {
 				</View>
 				<View style={styles.CardStyle1}>
 					<Text>Precio</Text>
-					<TextInput style={styles.InputStyle} placeholder="C$: 00.00"></TextInput>
+					<TextInput 
+						style={styles.InputStyle} 
+						placeholder="C$: 00.00"
+						onChangeText={(val) => this.DetalleCompra.Precio_UnitarioCompra = val}>
+					</TextInput>
 				</View>
 				<View style={styles.CardStyle1}>
 					<Text>Cantidad</Text>
-					<TextInput style={styles.InputStyle} placeholder="00"></TextInput>
+					<TextInput 
+						style={styles.InputStyle} 
+						placeholder="00"
+						onChangeText={(val) => this.DetalleCompra.Cantidad = val}>
+					</TextInput>
 				</View>
 				<View style={styles.CardStyle1}>
 					<Text>Subtotal: </Text>
-					<TextInput style={styles.InputStyle} placeholder="00"></TextInput>
+					<TextInput 
+						style={styles.InputStyle} 
+						placeholder="00"
+						onChangeText={(val) => this.DetalleCompra.Total_Costo = val}>
+					</TextInput>
 				</View>
 				{/** OPCIONES */}
 				<View style={styles.CardStyle1}>

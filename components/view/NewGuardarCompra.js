@@ -11,7 +11,7 @@ class NewGuardarCompra extends React.Component {
 		this.props = props;
 
 		this.Compra = new Compra_Articulo();
-		this.DetalleCompra = new Detalle_Compra();
+		//this.DetalleCompra = new Detalle_Compra();
 
 		this.state = {
 			Primaria: "ID",
@@ -25,7 +25,7 @@ class NewGuardarCompra extends React.Component {
 		this.CargarCompra = this.props.route.params.CargarCompra;
 	}
 
-	GuardarDetalleCompra = async (DetalleCompra = new Detalle_Compra(), key, ban) => {
+	/* GuardarDetalleCompra = async (DetalleCompra = new Detalle_Compra(), key, ban) => {
 		if (this.state.detallecompra.length > 0) {
 			const detallecompras = this.state.detallecompra.map((p) => {
 				if (p.Id_Articulo === key) {
@@ -54,7 +54,15 @@ class NewGuardarCompra extends React.Component {
 			});
 		}
 		this.props.navigation.navigate("NewGuardarCompra");
-	};
+	}; */
+
+	GuardarDetalleCompra = async (Detalle = (new Detalle_Compra())) => {
+        this.state.detallecompra.push(Detalle);
+        this.setState({
+            detallecompra: this.state.detallecompra
+        })
+        this.props.navigation.navigate("NewGuardarCompra");
+    }
 
 	SeleccionProveedor = async (key, Nombre) => {
 		this.setState({
@@ -121,7 +129,7 @@ class NewGuardarCompra extends React.Component {
 				<Text style={styles.Title}>Detalle de Compra</Text>
 				<ScrollView style={styles.CardStyle}>
 					{this.state.detallecompra.map((c) => (
-						<CardDetalleCompraView key={c.Id_Articulo} data={c} />
+						<CardDetalleCompraView key={c.Id_DetalleCompra} data={c} />
 					))}
 				</ScrollView>
 
