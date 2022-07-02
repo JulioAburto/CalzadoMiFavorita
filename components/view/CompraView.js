@@ -10,6 +10,7 @@ class CompraView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
+			Articulo:[],
 			DetalleCompraSeleccionado: {},
 		};
 		this.Compra = new Compra_Articulo();
@@ -31,6 +32,7 @@ class CompraView extends React.Component {
 		this.props.navigation.navigate("DetalleCompraView", {
 			Compra: Compra,
 			Dataset: this.state.DetalleCompras,
+			Articulo: this.state.DetalleCompras,
 		});
 	};
 	render() {

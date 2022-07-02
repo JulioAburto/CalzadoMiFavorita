@@ -22,20 +22,16 @@ class CardDetalleCompraView extends React.Component {
 	render() {
 		return (
 			<View>
-				 {this.state.Articulo.map((c) => (
+				{this.state.Articulo.map((c) => (
 					<Text key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
 				))}
-				 <Text style={styles.Atribute}>Precio: {this.props.data.Precio_UnitarioCompra}</Text>
+				<Text style={styles.Atribute}>Precio: {this.props.data.Precio_UnitarioCompra}</Text>
 				<Text style={styles.Atribute}>Cantidad: {this.props.data.Cantidad}</Text>
 				<Text style={styles.Atribute}>Total: {this.props.data.Total_Costo}</Text>
 
 				<View>
-					<Button onPress={() => {}}>
-						<Text>Editar</Text>
-					</Button>
-					<Button onPress={() => {}}>
-						<Text>Eliminar</Text>
-					</Button>
+					<Button title="Editar" onPress={() => {}}></Button>
+					<Button title="Eliminar" onPress={() => {}}></Button>
 				</View>
 			</View>
 		);
@@ -61,7 +57,7 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 	},
 	Atribute: {
-		color: "#252422",
+		color: "#001219",
 		fontSize: 20,
 	},
 	InputStyle: {
