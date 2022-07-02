@@ -7,9 +7,9 @@ class FrmArticuloNuevoFact extends React.Component {
 		this.props = props;
 		this.DetalleCompra = new Detalle_Compra();
 		this.state = {
-			LLP: "ID",
-			articulo: "articulo",
-			LLF: "ID",
+			LLP: "",
+			articulo: "",
+		
 			//Dataset: this.props.route.params.Dataset ?? [],
 		};
 		//this.NombreArticulo = "";
@@ -68,7 +68,7 @@ class FrmArticuloNuevoFact extends React.Component {
 					<Button
 						title="Cancelar"
 						onPress={async () => {
-						this.props.navigation.navigate("NewGuardarCompra")
+						this.props.navigation.navigate("ArticulosView")
 						}}
 					></Button>
 				</View>

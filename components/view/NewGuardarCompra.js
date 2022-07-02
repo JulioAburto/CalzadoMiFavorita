@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from "react-native";
 import { Compra_Articulo } from "../../Model/Compra_Articulo";
 import { Detalle_Compra } from "../../Model/Detalle_Compra";
+import { CardDetalleCompraView } from "../utility/CardDetalleCompraView";
 import { DetalleCompraView } from "./DetalleCompraView";
 
 class NewGuardarCompra extends React.Component {
@@ -12,30 +13,31 @@ class NewGuardarCompra extends React.Component {
 		this.Compra = new Compra_Articulo();
 		this.DetalleCompra = new Detalle_Compra();
 
-		this,
-			(this.state = {
-				Primaria: "ID",
-				detallecompra: [],
-				proveedor: "Proveedor",
-				fecha: Date().toString(),
-			});
+		this.state = {
+			Primaria: "ID",
+			detallecompra: [],
+			proveedor: "Proveedor",
+			fecha: Date().toString(),
+		};
 
 		this.keys = 0;
 
 		this.CargarCompra = this.props.route.params.CargarCompra;
 	}
 
-	GuardarDetalleCompra = async (DetalleCompra = new Detalle_Compra(), key, flag) => {
+	GuardarDetalleCompra = async (DetalleCompra = new Detalle_Compra(), key, ban) => {
 		if (this.state.detallecompra.length > 0) {
-			const detallecompra = this.state.detallecompra.map((p) => {
+			const detallecompras = this.state.detallecompra.map((p) => {
 				if (p.Id_Articulo === key) {
 					this.keys = p.Id_Articulo;
+					return p;
 				}
 				return p;
 			});
+			console.log(this.keys + " == " + key);
 			if (this.keys == key) {
 				this.setState({
-					detallecompra: detallecompra,
+					detallecompra: detallecompras,
 				});
 			} else {
 				this.state.detallecompra.push(DetalleCompra);
@@ -63,18 +65,18 @@ class NewGuardarCompra extends React.Component {
 		this.Compra.Id_Proveedor = key;
 	};
 
-	GuardarCompra = async () => {
-		this.Compra.Fecha_Compra = this.state.fecha;
+	// GuardarCompra = async () => {
+	// 	this.Compra.Fecha_Compra = this.state.fecha;
 
-		await this.Compra.Save("Id_Compra");
-		for (let index = 0; index < this.state.detallecompra.length; index++) {
-			const detallecompra = this.state.detallecompra[index];
-			detallecompra.Id_Articulo = this.Compra.Id_Compra;
+	// 	await this.Compra.Save("Id_Compra");
+	// 	for (let index = 0; index < this.state.detallecompra.length; index++) {
+	// 		const detallecompra = this.state.detallecompra[index];
+	// 		detallecompra.Id_Articulo = this.Compra.Id_Compra;
 
-			await this.DetalleCompra.Save("Id_DetalleCompra");
-		}
-		return true;
-	};
+	// 		await this.DetalleCompra.Save("Id_DetalleCompra");
+	// 	}
+	// 	return true;
+	// };
 
 	render() {
 		return (
@@ -119,7 +121,7 @@ class NewGuardarCompra extends React.Component {
 				<Text style={styles.Title}>Detalle de Compra</Text>
 				<ScrollView style={styles.CardStyle}>
 					{this.state.detallecompra.map((c) => (
-						<DetalleCompraView key={c.Id_Articulo} data={c} />
+						<CardDetalleCompraView key={c.Id_Articulo} data={c} />
 					))}
 				</ScrollView>
 

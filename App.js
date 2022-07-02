@@ -13,7 +13,7 @@ import { ArticuloView } from "./components/view/ArticuloView";
 import { ProveedorView } from "./components/view/ProveedorView";
 import { NewDetalleCompra } from "./components/view/NewDetalleCompra";
 import { NewGuardarCompra } from "./components/view/NewGuardarCompra";
-
+import { CardDetalleComp } from "./components/view/CardDetalleComp";
 export default function App() {
 	return (
 		<NavigationContainer>
