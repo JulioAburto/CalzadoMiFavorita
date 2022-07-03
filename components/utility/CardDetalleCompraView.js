@@ -25,9 +25,10 @@ class CardDetalleCompraView extends React.Component {
 				{this.state.Articulo.map((c) => (
 					<Text key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
 				))}
-				<Text style={styles.Atribute}>Precio: {this.props.data.Precio_UnitarioCompra}</Text>
+				<Text style={styles.Atribute}>P/U Compra: {this.props.data.Precio_UnitarioCompra}</Text>
+				<Text style={styles.Atribute}>P/U Venta: {this.props.data.Precio_UnitarioVenta}</Text>
 				<Text style={styles.Atribute}>Cantidad: {this.props.data.Cantidad}</Text>
-				<Text style={styles.Atribute}>Total: {this.props.data.Total_Costo}</Text>
+				<Text style={styles.Atribute}>Total Costo: {this.props.data.Total_Costo}</Text>
 
 				<View>
 					<Button title="Editar" onPress={() => {}}></Button>

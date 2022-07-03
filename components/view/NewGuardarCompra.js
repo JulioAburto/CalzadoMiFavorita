@@ -16,7 +16,7 @@ class NewGuardarCompra extends React.Component {
 			detallecompra: [],
 			proveedor: "",
 			fecha: Date().toString(),
-			Total: 0.000,
+			Total: 0.0,
 		};
 
 		this.keys = 0;
@@ -54,13 +54,13 @@ class NewGuardarCompra extends React.Component {
 		this.props.navigation.navigate("NewGuardarCompra");
 	}; */
 
-	GuardarDetalleCompra = async (Detalle = (new Detalle_Compra())) => {
-        this.state.detallecompra.push(Detalle);
-        this.setState({
-            detallecompra: this.state.detallecompra
-        })
-        this.props.navigation.navigate("NewGuardarCompra");
-    }
+	GuardarDetalleCompra = async (Detalle = new Detalle_Compra()) => {
+		this.state.detallecompra.push(Detalle);
+		this.setState({
+			detallecompra: this.state.detallecompra,
+		});
+		this.props.navigation.navigate("NewGuardarCompra");
+	};
 
 	SeleccionProveedor = async (key, Nombre) => {
 		this.setState({
@@ -85,19 +85,20 @@ class NewGuardarCompra extends React.Component {
 	// };
 
 	Save = async () => {
-            this.Compra.Fecha_Compra = this.state.fecha;
-            this.Compra.Total_Costo = this.state.Total;
+		this.Compra.Fecha_Compra = this.state.fecha;
+		this.Compra.Total_Costo = this.state.Total;
 
-            await this.Compra.Save("Id_Compra");
+		await this.Compra.Save("Id_Compra");
 
-            for (let index = 0; index < this.state.detallecompra.length; index++) {
-                const detallecompra = this.state.detallecompra[index];
-                detallecompra.Id_Compra = this.Compra.Id_Compra;
+		for (let index = 0; index < this.state.detallecompra.length; index++) {
+			const detallecompra = this.state.detallecompra[index];
+			detallecompra.Id_Compra = this.Compra.Id_Compra;
 
-                await this.DetalleCompra.Save("Id_DetalleCompra");
-            }
-            return true;
-    }
+			await this.DetalleCompra.Save("Id_DetalleCompra");
+		}
+		return true;
+		this.CargarCompra();
+	};
 
 	render() {
 		return (
@@ -130,21 +131,39 @@ class NewGuardarCompra extends React.Component {
 					/>
 				</View>
 				<ScrollView style={styles.CardStyle}>
-				<Button
-					color="#0466C8"
-					title="Agregar Articulo"
-					onPress={async () => {
-						this.props.navigation.navigate("FrmArticuloNuevoFact", {
-							GuardarDetalleCompra: this.GuardarDetalleCompra,
-						});
-					}}
-				/>
+					<Button
+						color="#0466C8"
+						title="Agregar Articulo"
+						onPress={async () => {
+							this.props.navigation.navigate("FrmArticuloNuevoFact", {
+								GuardarDetalleCompra: this.GuardarDetalleCompra,
+							});
+						}}
+					/>
 
-				<Text style={styles.Title}>Detalle de Compra</Text>
+					<Text style={styles.Title}>Detalle de Compra</Text>
 					{this.state.detallecompra.map((c) => (
 						<CardDetalleCompraView key={c.Id_DetalleCompra} data={c} />
 					))}
 				</ScrollView>
+				<View style={styles.FrmProveedor}>
+					<Text style={{ color: "white", alignSelf: "center", fontSize: 15 }}>Datos Proveedor</Text>
+					<TextInput
+						style={styles.InputStyle}
+						placeholder="IdUsuario"
+						multiline
+						numberOfLines={1}
+						onChangeText={(val) => (this.Compra.Id_Usuario = val)}
+					></TextInput>
+					<TextInput
+						style={styles.InputStyle}
+						placeholder="Total Costo"
+						multiline
+						numberOfLines={1}
+						onChangeText={(val) => (this.Compra.Total_Costo = val)}
+					></TextInput>
+					
+				</View>
 
 				<Button
 					color="#0466C8"
@@ -159,11 +178,13 @@ class NewGuardarCompra extends React.Component {
 								detallecompra: [],
 								proveedor: "",
 								fecha: Date().toString(),
-								Total: 0.000,
+								Total: 0.0,
 							});
 
 							this.props.navigation.navigate("CompraView");
 						}
+						await this.Save();
+						this.props.navigation.navigate("CompraView")
 					}}
 				/>
 
@@ -214,5 +235,18 @@ const styles = StyleSheet.create({
 		margin: 5,
 		borderWidth: 1,
 		borderRadius: 1.5,
+	},
+	FrmProveedor: {
+		display: "flex",
+		flexDirection: "column",
+		padding: 4,
+		marginTop: 10,
+		marginBottom: 4,
+		marginLeft: 4,
+		marginRight: 4,
+
+		borderWidth: 2,
+		borderRadius: 4,
+		borderColor: "black",
 	},
 });

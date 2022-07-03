@@ -50,11 +50,19 @@ class FrmArticuloNuevoFact extends React.Component {
 					></Button>
 				</View>
 				<View style={styles.CardStyle1}>
-					<Text>Precio</Text>
+					<Text>P/U Compra</Text>
 					<TextInput 
 						style={styles.InputStyle} 
 						placeholder="C$: 00.00"
 						onChangeText={(val) => this.DetalleCompra.Precio_UnitarioCompra = val}>
+					</TextInput>
+				</View>
+				<View style={styles.CardStyle1}>
+					<Text>P/U Venta</Text>
+					<TextInput 
+						style={styles.InputStyle} 
+						placeholder="C$: 00.00"
+						onChangeText={(val) => this.DetalleCompra.Precio_UnitarioVenta = val}>
 					</TextInput>
 				</View>
 				<View style={styles.CardStyle1}>
@@ -66,7 +74,7 @@ class FrmArticuloNuevoFact extends React.Component {
 					</TextInput>
 				</View>
 				<View style={styles.CardStyle1}>
-					<Text>Subtotal: </Text>
+					<Text>Total Costo: </Text>
 					<TextInput 
 						style={styles.InputStyle} 
 						placeholder="00"

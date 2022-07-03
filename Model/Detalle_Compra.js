@@ -29,7 +29,8 @@ class Detalle_Compra extends Entity {
 			}
 		},
 		set: (newValue) => {
-			this.val = newValue;
+			//this.val = newValue;
+			this.Articulo.val = newValue;
 		},
 	};
 }

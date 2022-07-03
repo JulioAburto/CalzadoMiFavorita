@@ -15,7 +15,7 @@ class DetalleCompraView extends React.Component {
 			Articulo: this.props.route.params.Articulo ?? [],
 			//	Compra: this.props.route.params.Compra,
 		};
-		this.CargarProducto(this.props.data);
+		//this.CargarProducto(this.props.data);
 	}
 	// NuevoContenido = async (Detalle, cargarContenidos) => {
 	// 	this.props.navigation.navigate("NewArticulo", {
@@ -77,13 +77,13 @@ class DetalleCompraView extends React.Component {
 			</ScrollView>
 		);
 	}
-	CargarProducto = async (e = new Detalle_Compra()) => {
-		const list = await e.Articulo.get();
-		const resultado =  list.filter((i) => i.Id_Articulo == e.Id_Articulo);
-		this.setState({
-			Articulo: resultado,
-		});
-	};
+	// CargarProducto = async (e = new Detalle_Compra()) => {
+	// 	const list = await e.Articulo.get();
+	// 	const resultado = list.filter((i) => i.Id_Articulo == e.Id_Articulo);
+	// 	this.setState({
+	// 		Articulo: resultado,
+	// 	});
+	// };
 }
 export { DetalleCompraView };
 
