@@ -1,6 +1,6 @@
 import { Entity } from "./core/Entity";
 class Articulo extends Entity {
-	constructor(articulo){
+	constructor(articulo) {
 		super();
 		for (const prop in articulo) {
 			this[prop] = articulo[prop];

@@ -17,13 +17,13 @@ class DetalleCompraView extends React.Component {
 		};
 		//this.CargarProducto(this.props.data);
 	}
-	// NuevoContenido = async (Detalle, cargarContenidos) => {
-	// 	this.props.navigation.navigate("NewArticulo", {
-	// 		Detalle: Detalle,
-	// 		cargarContenidos: cargarContenidos,
-	// 		GuardarArticulo: this.GuardarArticulo,
-	// 	});
-	// };
+	NuevoContenido = async (Detalle, cargarContenidos) => {
+		this.props.navigation.navigate("NewArticulo", {
+			Detalle: Detalle,
+			cargarContenidos: cargarContenidos,
+			GuardarArticulo: this.GuardarArticulo,
+		});
+	};
 	// GuardarArticulo = async (Detalle = new Detalle_Compra(), Art = new Articulo()) => {
 	// 	Art.Id_Articulo = Detalle.Id_Articulo;
 	// 	await Art.Save("Id_Articulo");

@@ -10,7 +10,7 @@ class CompraView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
-			Articulo:[],
+			Articulo: [],
 			DetalleCompraSeleccionado: {},
 		};
 		this.Compra = new Compra_Articulo();
