@@ -52,9 +52,8 @@ class NewArticulo extends React.Component {
 				<TextInput
 					style={styles.InputStyle}
 					placeholder="Fecha Registro :"
-
 					value={this.state.fechaActual}
-				//	onChangeText={(val) => (this.ArticuloG.fechaActual)}
+					//	onChangeText={(val) => (this.ArticuloG.fechaActual)}
 				></TextInput>
 				{/* <TextInput
 					style={styles.InputStyle}
@@ -74,7 +73,7 @@ class NewArticulo extends React.Component {
 				></Button>
 				<Button
 					title=" Cancelar "
-					color="#0466C8"
+					color="#F82F40"
 					onPress={async () => {
 						// await this.GuardarArticulo();
 						this.props.navigation.navigate("ArticuloView");

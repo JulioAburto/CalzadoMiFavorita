@@ -9,7 +9,7 @@ class FrmArticuloNuevoFact extends React.Component {
 		this.state = {
 			LLP: "",
 			articulo: "",
-		
+
 			//Dataset: this.props.route.params.Dataset ?? [],
 		};
 		//this.NombreArticulo = "";
@@ -33,11 +33,7 @@ class FrmArticuloNuevoFact extends React.Component {
 						placeholder="Articulo"
 						value={this.state.articulo}
 					></TextInput>
-					<TextInput 
-						style={styles.InputStyle} 
-						placeholder="ID" 
-						value={this.state.LLP}>
-					</TextInput>
+					<TextInput style={styles.InputStyle} placeholder="ID" value={this.state.LLP}></TextInput>
 					<Button
 						color="#0466C8"
 						title="+"
@@ -49,50 +45,49 @@ class FrmArticuloNuevoFact extends React.Component {
 						}}
 					></Button>
 				</View>
-				<View style={styles.CardStyle1}>
+				<View style={styles.CardStyle}>
 					<Text>P/U Compra</Text>
-					<TextInput 
-						style={styles.InputStyle} 
+					<TextInput
+						style={styles.InputStyle}
 						placeholder="C$: 00.00"
-						onChangeText={(val) => this.DetalleCompra.Precio_UnitarioCompra = val}>
-					</TextInput>
-				</View>
-				<View style={styles.CardStyle1}>
+						onChangeText={(val) => (this.DetalleCompra.Precio_UnitarioCompra = val)}
+					></TextInput>
+
 					<Text>P/U Venta</Text>
-					<TextInput 
-						style={styles.InputStyle} 
+					<TextInput
+						style={styles.InputStyle}
 						placeholder="C$: 00.00"
-						onChangeText={(val) => this.DetalleCompra.Precio_UnitarioVenta = val}>
-					</TextInput>
-				</View>
-				<View style={styles.CardStyle1}>
+						onChangeText={(val) => (this.DetalleCompra.Precio_UnitarioVenta = val)}
+					></TextInput>
+
 					<Text>Cantidad</Text>
-					<TextInput 
-						style={styles.InputStyle} 
+					<TextInput
+						style={styles.InputStyle}
 						placeholder="00"
-						onChangeText={(val) => this.DetalleCompra.Cantidad = val}>
-					</TextInput>
-				</View>
-				<View style={styles.CardStyle1}>
+						onChangeText={(val) => (this.DetalleCompra.Cantidad = val)}
+					></TextInput>
+
 					<Text>Total Costo: </Text>
-					<TextInput 
-						style={styles.InputStyle} 
+					<TextInput
+						style={styles.InputStyle}
 						placeholder="00"
-						onChangeText={(val) => this.DetalleCompra.Total_Costo = val}>
-					</TextInput>
+						onChangeText={(val) => (this.DetalleCompra.Total_Costo = val)}
+					></TextInput>
 				</View>
 				{/** OPCIONES */}
 				<View style={styles.CardStyle1}>
 					<Button
 						title="Agregar Producto a Detalle"
+						color="#0466C8"
 						onPress={async () => {
 							this.GuardarDetalleCompra(this.DetalleCompra, this.state.LLP, this.ban);
 						}}
 					></Button>
 					<Button
 						title="Cancelar"
+						color="#F82F40"
 						onPress={async () => {
-						this.props.navigation.navigate("ArticulosView")
+							this.props.navigation.navigate("NewGuardarCompra");
 						}}
 					></Button>
 				</View>

@@ -53,7 +53,7 @@ class NewProveedor extends React.Component {
 				></Button>
 				<Button
 					title=" Cancelar "
-					color="#0466C8"
+					color="#F82F40"
 					onPress={() => this.props.navigation.navigate("ProveedorView")}
 				></Button>
 			</View>

@@ -8,6 +8,7 @@ const CardArticuloComp = (props) => {
 			<Text style={styles.Atribute}>Descripcion Articulo {props.data.Descripcion_Articulo} </Text>
 			<Text style={styles.Atribute}>Fecha Registro: {props.data.Fecha_Registro} </Text>
 			<Button
+			color="#0466C8"
 				onPress={() => {
 					props.seleccion
 						? props.SeleccionArticulo(props.data.Id_Articulo, props.data.Nombre_Articulo)

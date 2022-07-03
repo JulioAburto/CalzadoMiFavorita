@@ -112,7 +112,6 @@ class NewGuardarCompra extends React.Component {
 		this.CargarCompra();
 	};
 
-
 	render() {
 		return (
 			<ScrollView style={styles.CardStyle}>
@@ -160,7 +159,7 @@ class NewGuardarCompra extends React.Component {
 					))}
 				</ScrollView>
 				<View style={styles.FrmProveedor}>
-					<Text style={{ color: "white", alignSelf: "center", fontSize: 15 }}>Datos Proveedor</Text>
+					<Text style={styles.Title}>Datos Usuarios</Text>
 					<TextInput
 						style={styles.InputStyle}
 						placeholder="IdUsuario"
@@ -175,7 +174,6 @@ class NewGuardarCompra extends React.Component {
 						numberOfLines={1}
 						onChangeText={(val) => (this.Compra.Total_Costo = val)}
 					></TextInput>
-					
 				</View>
 
 				<Button
@@ -197,12 +195,12 @@ class NewGuardarCompra extends React.Component {
 						// 	this.props.navigation.navigate("CompraView");
 						// }
 						await this.Save();
-						this.props.navigation.navigate("CompraView")
+						this.props.navigation.navigate("CompraView");
 					}}
 				/>
 
 				<Button
-					color="#0466C8"
+					color="#F82F40"
 					title="Cancelar"
 					onPress={() => {
 						this.props.navigation.navigate("CompraView");
@@ -217,7 +215,7 @@ export { NewGuardarCompra };
 const styles = StyleSheet.create({
 	CardStyle: {
 		flex: 4,
-		backgroundColor: "#e9ecef",
+		backgroundColor: "#f8f9fa",
 		padding: 20,
 		margin: 10,
 		borderRadius: 10,
@@ -253,13 +251,6 @@ const styles = StyleSheet.create({
 		display: "flex",
 		flexDirection: "column",
 		padding: 4,
-		marginTop: 10,
-		marginBottom: 4,
-		marginLeft: 4,
-		marginRight: 4,
-
-		borderWidth: 2,
-		borderRadius: 4,
-		borderColor: "black",
+		backgroundColor: "#f8f9fa",
 	},
 });
