@@ -21,9 +21,9 @@ class CardDetalleCompraView extends React.Component {
 	};
 	render() {
 		return (
-			<View>
+			<View style={styles.CardStyle}>
 				{this.state.Articulo.map((c) => (
-					<Text key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
+					<Text style={styles.Atribute} key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
 				))}
 				<Text style={styles.Atribute}>P/U Compra: {this.props.data.Precio_UnitarioCompra}</Text>
 				<Text style={styles.Atribute}>P/U Venta: {this.props.data.Precio_UnitarioVenta}</Text>
@@ -42,8 +42,10 @@ export { CardDetalleCompraView };
 
 const styles = StyleSheet.create({
 	CardStyle: {
-		flex: 4,
-		backgroundColor: "#e9ecef",
+		backgroundColor: "#33415C",
+		flex: 1,
+		alignSelf: "stretch",
+		flexDirection: "column",
 		padding: 20,
 		margin: 10,
 		borderRadius: 10,
@@ -58,8 +60,10 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 	},
 	Atribute: {
-		color: "#001219",
-		fontSize: 20,
+		flex: 1,
+		alignSelf: "stretch",
+		color: "#e9ecef",
+		fontSize: 13,
 	},
 	InputStyle: {
 		width: "45%",

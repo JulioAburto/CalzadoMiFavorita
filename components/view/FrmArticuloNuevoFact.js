@@ -46,28 +46,28 @@ class FrmArticuloNuevoFact extends React.Component {
 					></Button>
 				</View>
 				<View style={styles.CardStyle}>
-					<Text>P/U Compra</Text>
+					<Text style={styles.Title}>P/U Compra</Text>
 					<TextInput
 						style={styles.InputStyle}
 						placeholder="C$: 00.00"
 						onChangeText={(val) => (this.DetalleCompra.Precio_UnitarioCompra = val)}
 					></TextInput>
 
-					<Text>P/U Venta</Text>
+					<Text style={styles.Title}>P/U Venta</Text>
 					<TextInput
 						style={styles.InputStyle}
 						placeholder="C$: 00.00"
 						onChangeText={(val) => (this.DetalleCompra.Precio_UnitarioVenta = val)}
 					></TextInput>
 
-					<Text>Cantidad</Text>
+					<Text style={styles.Title}>Cantidad</Text>
 					<TextInput
 						style={styles.InputStyle}
 						placeholder="00"
 						onChangeText={(val) => (this.DetalleCompra.Cantidad = val)}
 					></TextInput>
 
-					<Text>Total Costo: </Text>
+					<Text style={styles.Title}>Total Costo: </Text>
 					<TextInput
 						style={styles.InputStyle}
 						placeholder="00"
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
 	},
 	Title: {
 		color: "#252422",
-		fontSize: 20,
+		fontSize: 18,
 	},
 	InputStyle: {
 		width: "45%",
