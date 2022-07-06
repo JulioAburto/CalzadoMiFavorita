@@ -12,7 +12,9 @@ const CardProveedorComp = (props) => {
 				title="✓"
 				color="#0466C8"
 				onPress={() => {
-					props.SeleccionProveedor(props.data.Id_Proveedor, props.data.Nombre_proveedor);
+					props.seleccion 
+						? props.SeleccionProveedor(props.data.Id_Proveedor, props.data.Nombre_proveedor)
+						: false;
 				}}
 			></Button>
 		</View>

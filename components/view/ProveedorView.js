@@ -9,7 +9,7 @@ class ProveedorView extends React.Component {
 		this.state = {
 			isLoading: true,
 			Dataset: [],
-			
+			seleccion: this.props.route.params ?? false,
 		};
 		this.Proveedor = new Proveedor();
 		this.CargarProveedores();
@@ -30,7 +30,6 @@ class ProveedorView extends React.Component {
 	SeleccionProveedor = async (pk, name) => {
 		await this.props.route.params.SeleccionProveedor(pk, name);
 		this.props.navigation.navigate("NewGuardarCompra");
-		
 	};
 
 	render() {
@@ -59,7 +58,6 @@ class ProveedorView extends React.Component {
 							key={proveedor.Id_Proveedor}
 							SeleccionProveedor={this.SeleccionProveedor}
 							data={proveedor}
-							
 						/>
 					))
 				)}
