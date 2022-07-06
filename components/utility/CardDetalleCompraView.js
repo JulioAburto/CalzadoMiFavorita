@@ -11,6 +11,7 @@ class CardDetalleCompraView extends React.Component {
 			Articulo: [],
 		};
 		this.CargarProducto(this.props.data);
+		this.EliminarDetalleC = this.props.EliminarDetalleC;
 	}
 	CargarProducto = async (e = new Detalle_Compra()) => {
 		const list = await e.Articulo.get();
@@ -23,12 +24,21 @@ class CardDetalleCompraView extends React.Component {
 		return (
 			<View style={styles.CardStyle}>
 				{this.state.Articulo.map((c) => (
-					<Text style={styles.Atribute} key={c.Id_Articulo}>Nombre de producto: {c.Nombre_Articulo}</Text>
+					<Text style={styles.Atribute} key={c.Id_Articulo}>
+						Nombre de producto: {c.Nombre_Articulo}
+					</Text>
 				))}
 				<Text style={styles.Atribute}>P/U Compra: {this.props.data.Precio_UnitarioCompra}</Text>
 				<Text style={styles.Atribute}>P/U Venta: {this.props.data.Precio_UnitarioVenta}</Text>
 				<Text style={styles.Atribute}>Cantidad: {this.props.data.Cantidad}</Text>
 				<Text style={styles.Atribute}>Total Costo: {this.props.data.Total_Costo}</Text>
+				<Button
+				title=" Eliminar "
+				color="#d00000"
+					onPress={() => {
+						this.EliminarDetalleC(this.props.data);
+					}}
+				></Button>
 			</View>
 		);
 	}

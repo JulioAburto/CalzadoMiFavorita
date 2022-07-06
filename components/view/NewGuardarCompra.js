@@ -70,6 +70,12 @@ class NewGuardarCompra extends React.Component {
 
 		this.Compra.Id_Proveedor = key;
 	};
+	EliminarDetalleC = async (art) => {
+		const eliminar = this.state.detallecompra.filter((i) => i.Id_Articulo !== art.Id_Articulo);
+		this.setState({
+			detallecompra: eliminar,
+		});
+	};
 
 	// GuardarCompra = async () => {
 	// 	this.Compra.Fecha_Compra = this.state.fecha;
@@ -155,7 +161,7 @@ class NewGuardarCompra extends React.Component {
 
 					<Text style={styles.Title}>Detalle de Compra</Text>
 					{this.state.detallecompra.map((c) => (
-						<CardDetalleCompraView key={c.Id_DetalleCompra} data={c} />
+						<CardDetalleCompraView key={c.Id_DetalleCompra} data={c} EliminarDetalleC = {this.EliminarDetalleC} />
 					))}
 				</ScrollView>
 				<View style={styles.FrmProveedor}>
