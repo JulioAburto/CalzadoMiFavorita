@@ -4,9 +4,7 @@ const CardProveedorComp = (props) => {
 	return (
 		<View style={styles.CardStyle}>
 			<Text style={styles.Title}>Proveedores</Text>
-			{/* <Text style={styles.Atribute}>Id: {props.data.IdCurso} </Text> */}
 			<Text style={styles.Atribute}>Nombre del Proveedor: {props.data.Nombre_proveedor} </Text>
-			{/* <Text style={styles.Resumen}>Resumen: {props.data.ResumenCurso} </Text> */}
 			<Text style={styles.Atribute}>Dirección: {props.data.Dirección} </Text>
 			<Text style={styles.Atribute}>Teléfono: {props.data.Teléfono} </Text>
 			<Text style={styles.Atribute}>Correo: {props.data.Correo} </Text>

@@ -29,11 +29,6 @@ class CardDetalleCompraView extends React.Component {
 				<Text style={styles.Atribute}>P/U Venta: {this.props.data.Precio_UnitarioVenta}</Text>
 				<Text style={styles.Atribute}>Cantidad: {this.props.data.Cantidad}</Text>
 				<Text style={styles.Atribute}>Total Costo: {this.props.data.Total_Costo}</Text>
-
-				{/* <View>
-					<Button title="Editar" onPress={() => {}}></Button>
-					<Button title="Eliminar" onPress={() => {}}></Button>
-				</View> */}
 			</View>
 		);
 	}

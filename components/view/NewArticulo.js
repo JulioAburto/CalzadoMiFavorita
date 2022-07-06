@@ -55,11 +55,6 @@ class NewArticulo extends React.Component {
 					value={this.state.fechaActual}
 					//	onChangeText={(val) => (this.ArticuloG.fechaActual)}
 				></TextInput>
-				{/* <TextInput
-					style={styles.InputStyle}
-					placeholder="Fecha Registro:"
-					onChangeText={(val) => (this.Articulo.Fecha_Registro = val)}
-				></TextInput> */}
 
 				{/* OPCIONES */}
 				<Button

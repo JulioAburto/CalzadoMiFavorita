@@ -26,10 +26,6 @@ class ArticuloView extends React.Component {
 		this.props.route.params.SeleccionArticulo(llp, nombre);
 		this.props.navigation.navigate("FrmArticuloNuevoFact");
 	};
-	/* GuardarArticulo = async (Articulop = new Articulo()) => {
-		await Articulop.Save("Id_Articulo");
-		this.props.navigation.navigate("ArticuloView");
-	}; */
 	render() {
 		return (
 			<ScrollView>

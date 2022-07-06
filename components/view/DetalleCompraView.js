@@ -52,15 +52,9 @@ class DetalleCompraView extends React.Component {
 							<Text style={styles.TitleP}>Detalle de Factura Compra</Text>
 							<View style={styles.CardStyles1}>
 								<Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
-								{/* <Text style={styles.Atribute}>Fecha:{p.Fecha}</Text> */}
-								{/* <Text style={styles.Atribute}>Fecha:{p.Fecha}</Text>
-								<Text style={styles.Atribute}>Total Costo: C${p.Total_Costo}</Text> */}
 								<Text style={styles.Atribute}>P/U Compra: C${p.Precio_UnitarioCompra}</Text>
 							</View>
 							<View style={styles.CardStyles1}>
-								{/* <Text style={styles.Atribute}>Cantidad:{p.Cantidad}</Text>
-								<Text style={styles.Atribute}>P/U Compra: C${p.Precio_UnitarioCompra}</Text>
-							<Text style={styles.Atribute}>P/U Venta: C${p.Precio_UnitarioVenta}</Text> */}
 								<Text style={styles.Atribute}>P/U Venta: C${p.Precio_UnitarioVenta}</Text>
 								<Text style={styles.Atribute}>Total Costo: C${p.Total_Costo}</Text>
 							</View>

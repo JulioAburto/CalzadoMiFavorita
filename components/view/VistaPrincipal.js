@@ -13,7 +13,7 @@ import { ProveedorView } from "./ProveedorView";
 import { NewProveedor } from "./NewProveedor";
 import { NewDetalleCompra } from "./NewDetalleCompra";
 import { NewGuardarCompra } from "./NewGuardarCompra";
-import { FrmArticuloNuevoFact} from "./FrmArticuloNuevoFact";
+import { FrmArticuloNuevoFact } from "./FrmArticuloNuevoFact";
 import { CardDetalleCompraView } from "../utility/CardDetalleCompraView";
 
 export default function VistaPrincipal() {
@@ -29,8 +29,6 @@ export default function VistaPrincipal() {
 			<Stack.Screen name="NewGuardarCompra" component={NewGuardarCompra} />
 			<Stack.Screen name="FrmArticuloNuevoFact" component={FrmArticuloNuevoFact} />
 			<Stack.Screen name="CardDetalleCompraView" component={CardDetalleCompraView} />
-
-		
 		</Stack.Navigator>
 	);
 }
