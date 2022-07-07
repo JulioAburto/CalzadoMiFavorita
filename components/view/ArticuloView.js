@@ -15,6 +15,8 @@ class ArticuloView extends React.Component {
 		this.Articulo = new Articulo();
 		this.CargarArticulo();
 	}
+	/*Esta funcion carga los articulos, carga todo
+	 los datos que posee al dataset para que se haga el mapeo */
 	CargarArticulo = async (param = "") => {
 		const Articulos = await this.Articulo.Get(param);
 		this.setState({
@@ -22,6 +24,8 @@ class ArticuloView extends React.Component {
 			Dataset: Articulos,
 		});
 	};
+	/* Esta funcion manda a pedir el id y el nombre del articulo, 
+	para poder seleccionar un articulo a la nueva factura */
 	SeleccionArticulo = async (llp, nombre) => {
 		this.props.route.params.SeleccionArticulo(llp, nombre);
 		this.props.navigation.navigate("FrmArticuloNuevoFact");
@@ -49,6 +53,10 @@ class ArticuloView extends React.Component {
 				{this.state.isLoading ? (
 					<ActivityIndicator />
 				) : (
+					/* Aqui se mandan a mapear lo datos por medio del arreglo vacio 
+					que es el dataset, usando una variable llamada articulo
+					todo esto se manda a traer mediante el CardArticuloComp que contiene 
+					todos los detalles del artiulo */
 					this.state.Dataset.map((articulo) => (
 						<CardArticuloComp
 							key={articulo.Id_Articulo}

@@ -6,11 +6,6 @@ import { Detalle_Compra } from "../../Model/Detalle_Compra";
 class NewArticulo extends React.Component {
 	constructor(props) {
 		super();
-		// this.props = props;
-		// this.Articulo = new Articulo();
-		// this.Detalle = this.props.route.params.Detalle;
-		//this.GuardarArticulo = this.props.route.params.GuardarArticulo;
-		// this.cargarContenidos = this.props.route.params.cargarContenidos;
 		this.props = props;
 		this.ArticuloG = new Articulo();
 
@@ -20,13 +15,6 @@ class NewArticulo extends React.Component {
 		};
 		this.CargarArticulo = this.props.route.params.CargarArticulo;
 	}
-	// CargarProducto = async (e = new Detalle_Compra()) => {
-	// 	const list = await e.Articulo.get();
-	// 	const resultado = list.filter((i) => i.Id_Articulo == e.Id_Articulo);
-	// 	this.setState({
-	// 		Articulo: resultado,
-	// 	});
-	// };
 	GuardarArticulo = async () => {
 		this.ArticuloG.Fecha_Registro = this.state.fechaActual;
 		await this.ArticuloG.Save("Id_Articulo");
