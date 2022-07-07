@@ -8,7 +8,7 @@ class Entity {
 	}
 	ApiRoute = "";
 	ApiMethods = {
-		Get: this.__proto__.constructor.name,
+		Get: this.__proto__.constructor.name,//propiedad del prototipo de esta instancia.Constructor definicion de lo que construye el metodo. nombre de la clase
 		Set: "ApiSet",
 		Update: "ApiUpdate",
 	};
@@ -17,6 +17,7 @@ class Entity {
 		Data = Data.filter((ent) => {
 			let flag = false;
 			for (const prop in ent) {
+				//recorre todas las propiedades del objeto en buscas de coincidencia con el parametro
 				if (
 					ent[prop].__proto__ != Array.prototype &&
 					ent[prop].__proto__ != Object.prototype &&
@@ -28,7 +29,7 @@ class Entity {
 			}
 			return flag;
 		});
-		return Data.map((ent) => new this.constructor(ent));
+		return Data.map((ent) => new this.constructor(ent));//mapeo del constructor de entidad, crear entidad de este tipo y push al map del objeto
 	};
 	GetByProps = async (paramName, paramValue) => {
 		let Data = await this.TakeData();
@@ -39,9 +40,10 @@ class Entity {
 		let Data = await this.TakeData();
 		const FindObject = Data.find((ent) =>
 			ent[paramName].toString().includes(paramValue.toString())
-		);
+		);//busca el objeto que coincida, su propiedades coincidan
 		if (FindObject) {
 			return new this.constructor(FindObject);
+			//si lo encontraste retorna el objeto del tipo en el que se este trabjando
 		}
 	};
 

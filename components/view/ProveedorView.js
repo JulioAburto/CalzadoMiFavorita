@@ -14,6 +14,7 @@ class ProveedorView extends React.Component {
 		this.Proveedor = new Proveedor();
 		this.CargarProveedores();
 	}
+	/* Esta funcion carga los proveedores, carga los datos al dataset para el mapeo*/
 	CargarProveedores = async (param = "") => {
 		const Proveedores = await this.Proveedor.Get(param);
 		this.setState({
@@ -21,12 +22,8 @@ class ProveedorView extends React.Component {
 			Dataset: Proveedores,
 		});
 	};
-
-	// GuardarProveedor = async (Bloquep = new Proveedor()) => {
-	// 	await Bloquep.Save("Id_Proveedor");
-
-	// 	this.props.navigation.navigate("ProveedorView");
-	// };
+	/* Manda a pedir el id del proveedor y su nombre
+	Esto es para pode seleccionar el articulo en la factura */
 	SeleccionProveedor = async (pk, name) => {
 		await this.props.route.params.SeleccionProveedor(pk, name);
 		this.props.navigation.navigate("NewGuardarCompra");

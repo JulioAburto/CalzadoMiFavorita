@@ -16,6 +16,7 @@ class CompraView extends React.Component {
 		this.Compra = new Compra_Articulo();
 		this.CargarCompra();
 	}
+	/* Carga las compras que se hacen, y se cargan al dataset*/
 	CargarCompra = async (param = "") => {
 		const Compras = await this.Compra.Get(param);
 		this.setState({
@@ -23,6 +24,9 @@ class CompraView extends React.Component {
 			Dataset: Compras,
 		});
 	};
+	/* Permite cargar los detalle que estan relacionados a las compras
+	Cargando los datos a los arreglos vacios
+	y posteriormente carga datos en las navigation */
 	CargarDetalleCompra = async (Compra = new Compra_Articulo()) => {
 		const DetalleCompras = await Compra.Detalle_Compra.get();
 		this.setState({

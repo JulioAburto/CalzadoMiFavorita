@@ -23,7 +23,9 @@ class NewGuardarCompra extends React.Component {
 		this.CargarCompra = this.props.route.params.CargarCompra;
 	}
 
-
+/* Esto permite guardar el detalle, el cual tiene la relacion con los articulos
+lo que permite es hacer un push al detallcompra
+y posteriormente se lo manda al newGuardarCompra */
 	GuardarDetalleCompra = async (Detalle = new Detalle_Compra()) => {
 		this.state.detallecompra.push(Detalle);
 		this.setState({
@@ -31,7 +33,7 @@ class NewGuardarCompra extends React.Component {
 		});
 		this.props.navigation.navigate("NewGuardarCompra");
 	};
-
+/*  Esto permite selecionar un proveedor en el detalle, mandado los datos del id*/
 	SeleccionProveedor = async (key, Nombre) => {
 		this.setState({
 			Primaria: key,
@@ -40,6 +42,8 @@ class NewGuardarCompra extends React.Component {
 
 		this.Compra.Id_Proveedor = key;
 	};
+	/* Se filtran los id del articulo que se añado al detalle, y una vez teniendo este id
+	esto permite hacer la accion de eliminar los datos  */
 	EliminarDetalleC = async (art) => {
 		const eliminar = this.state.detallecompra.filter((i) => i.Id_Articulo !== art.Id_Articulo);
 		this.setState({

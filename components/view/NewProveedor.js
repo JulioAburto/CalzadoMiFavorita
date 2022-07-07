@@ -12,6 +12,7 @@ class NewProveedor extends React.Component {
 		};
 		this.CargarProveedores = this.props.route.params.CargarProveedores;
 	}
+	/* Esto permite guardar los proveedores que se hace y luego cargar los proveedores*/
 	GuardarProveedor = async () => {
 		await this.ProveedorBlock.Save("Id_Proveedor");
 		this.CargarProveedores();
