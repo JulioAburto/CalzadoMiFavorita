@@ -20,7 +20,6 @@ export { CardDetalleCompra };
 const styles = StyleSheet.create({
 	CardStyle: {
 		backgroundColor: "#212529",
-		// height: "20%",
 		padding: 20,
 		borderRadius: 10
 	},

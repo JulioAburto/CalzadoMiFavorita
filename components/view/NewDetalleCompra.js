@@ -8,7 +8,6 @@ class NewDetalleCompra extends React.Component {
 		this.props = props;
 		this.Detalle = new Detalle_Compra();
 
-		//this.Bloque = this.props.route.params.Bloque;
 	}
 
 	render() {
@@ -48,8 +47,6 @@ class NewDetalleCompra extends React.Component {
 					color={"#008000"}
 					onPress={async () => {
 						await this.props.route.params.GuardarDetalle(this.Detalle);
-						//await this.props.route.params.cargarContenidos();
-						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
 				<Button

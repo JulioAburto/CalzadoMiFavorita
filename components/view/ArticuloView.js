@@ -40,7 +40,6 @@ class ArticuloView extends React.Component {
 					}
 					style={styles.Title}
 				>
-					{/* {this.props.seleccion ? <Text>Añadir</Text> : <Text>Lista Articulo</Text>} */}
 				</Button>
 				<TextInput
 					style={{ padding: 10, margin: 10, borderWidth: 1, borderRadius: 3 }}

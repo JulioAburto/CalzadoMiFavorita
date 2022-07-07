@@ -9,8 +9,7 @@ class FrmArticuloNuevoFact extends React.Component {
 		this.state = {
 			LLP: "",
 			articulo: "",
-
-			//Dataset: this.props.route.params.Dataset ?? [],
+			
 		};
 		//this.NombreArticulo = "";
 		this.GuardarDetalleCompra = this.props.route.params.GuardarDetalleCompra;

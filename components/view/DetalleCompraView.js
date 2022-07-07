@@ -13,9 +13,7 @@ class DetalleCompraView extends React.Component {
 			Detalle: this.props.route.params.Detalle,
 			Dataset: this.props.route.params.Dataset ?? [],
 			Articulo: this.props.route.params.Articulo ?? [],
-			//	Compra: this.props.route.params.Compra,
 		};
-		//this.CargarProducto(this.props.data);
 	}
 	NuevoContenido = async (Detalle, cargarContenidos) => {
 		this.props.navigation.navigate("NewArticulo", {
@@ -24,18 +22,6 @@ class DetalleCompraView extends React.Component {
 			GuardarArticulo: this.GuardarArticulo,
 		});
 	};
-	// GuardarArticulo = async (Detalle = new Detalle_Compra(), Art = new Articulo()) => {
-	// 	Art.Id_Articulo = Detalle.Id_Articulo;
-	// 	await Art.Save("Id_Articulo");
-	// 	this.props.navigation.navigate("DetalleCompraView");
-	// };
-	// GuardarBloque = async (Detalle = new Detalle_Compra()) => {
-	// 	Detalle.Id_Compra = this.state.Compra.Id_Compra;
-	// 	await Detalle.Save("Id_Compra");
-	// 	const Detalles = await this.state.Compra.Detalle_Compra.get();
-	// 	this.setState({ Dataset: Detalles });
-	// 	this.props.navigation.navigate("DetalleCompraView");
-	// };
 
 	render() {
 		return (
@@ -71,13 +57,6 @@ class DetalleCompraView extends React.Component {
 			</ScrollView>
 		);
 	}
-	// CargarProducto = async (e = new Detalle_Compra()) => {
-	// 	const list = await e.Articulo.get();
-	// 	const resultado = list.filter((i) => i.Id_Articulo == e.Id_Articulo);
-	// 	this.setState({
-	// 		Articulo: resultado,
-	// 	});
-	// };
 }
 export { DetalleCompraView };
 

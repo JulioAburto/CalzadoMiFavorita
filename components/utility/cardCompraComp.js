@@ -42,10 +42,6 @@ const styles = StyleSheet.create({
 		padding: 0,
 		margin: 0,
 		borderRadius: 10,
-		// borderWidth: 1,
-		// borderColor: "#001233",
-		// padding: 5,
-		// margin: 5,
 	},
 	Title: {
 		color: "#f8f9fa",

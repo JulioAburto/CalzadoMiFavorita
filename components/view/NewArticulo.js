@@ -53,7 +53,6 @@ class NewArticulo extends React.Component {
 					style={styles.InputStyle}
 					placeholder="Fecha Registro :"
 					value={this.state.fechaActual}
-					//	onChangeText={(val) => (this.ArticuloG.fechaActual)}
 				></TextInput>
 
 				{/* OPCIONES */}
@@ -63,16 +62,13 @@ class NewArticulo extends React.Component {
 					onPress={async () => {
 						await this.GuardarArticulo();
 						this.props.navigation.navigate("CompraView");
-						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
 				<Button
 					title=" Cancelar "
 					color="#F82F40"
 					onPress={async () => {
-						// await this.GuardarArticulo();
 						this.props.navigation.navigate("ArticuloView");
-						//this.props.navigation.navigate("DetalleCursoView");
 					}}
 				></Button>
 			</View>

@@ -23,36 +23,6 @@ class NewGuardarCompra extends React.Component {
 		this.CargarCompra = this.props.route.params.CargarCompra;
 	}
 
-	/* GuardarDetalleCompra = async (DetalleCompra = new Detalle_Compra(), key, ban) => {
-		if (this.state.detallecompra.length > 0) {
-			const detallecompras = this.state.detallecompra.map((p) => {
-				if (p.Id_Articulo === key) {
-					this.keys = p.Id_Articulo;
-					return p;
-				}
-				return p;
-			});
-			console.log(this.keys + " == " + key);
-			if (this.keys == key) {
-				this.setState({
-					detallecompra: detallecompras,
-				});
-			} else {
-				this.state.detallecompra.push(DetalleCompra);
-
-				this.setState({
-					detallecompra: this.state.detallecompra,
-				});
-			}
-		} else {
-			this.state.detallecompra.push(DetalleCompra);
-
-			this.setState({
-				detallecompra: this.state.detallecompra,
-			});
-		}
-		this.props.navigation.navigate("NewGuardarCompra");
-	}; */
 
 	GuardarDetalleCompra = async (Detalle = new Detalle_Compra()) => {
 		this.state.detallecompra.push(Detalle);
@@ -77,34 +47,6 @@ class NewGuardarCompra extends React.Component {
 		});
 	};
 
-	// GuardarCompra = async () => {
-	// 	this.Compra.Fecha_Compra = this.state.fecha;
-
-	// 	await this.Compra.Save("Id_Compra");
-	// 	for (let index = 0; index < this.state.detallecompra.length; index++) {
-	// 		const detallecompra = this.state.detallecompra[index];
-	// 		detallecompra.Id_Articulo = this.Compra.Id_Compra;
-
-	// 		await this.DetalleCompra.Save("Id_DetalleCompra");
-	// 	}
-	// 	return true;
-	// };
-
-	// Save = async () => {
-	// 	this.Compra.Fecha_Compra = this.state.fecha;
-	// 	this.Compra.Total_Costo = this.state.Total;
-
-	// 	await this.Compra.Save("Id_Compra");
-
-	// 	for (let index = 0; index < this.state.detallecompra.length; index++) {
-	// 		const detallecompra = this.state.detallecompra[index];
-	// 		detallecompra.Id_Compra = this.Compra.Id_Compra;
-
-	// 		await this.DetalleCompra.Save("Id_DetalleCompra");
-	// 	}
-	// 	//return true;
-	// 	this.CargarCompra();
-	// };
 	Save = async () => {
 		this.Compra.Fecha_Compra = this.state.fecha;
 
@@ -142,7 +84,6 @@ class NewGuardarCompra extends React.Component {
 						/>
 					</View>
 					<TextInput
-						// style={styles.InputStyle}
 						style={styles.InputStyleF}
 						placeholder="Fecha Compra"
 						value={this.state.fecha}
@@ -186,20 +127,6 @@ class NewGuardarCompra extends React.Component {
 					color="#0466C8"
 					title="Guardar Compra"
 					onPress={async () => {
-						// const response = await this.Save();
-
-						// if (response) {
-						// 	await this.CargarCompra();
-						// 	this.setState({
-						// 		Primaria: "",
-						// 		detallecompra: [],
-						// 		proveedor: "",
-						// 		fecha: Date().toString(),
-						// 		Total: 0.0,
-						// 	});
-
-						// 	this.props.navigation.navigate("CompraView");
-						// }
 						await this.Save();
 						this.props.navigation.navigate("CompraView");
 					}}
