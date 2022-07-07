@@ -78,6 +78,8 @@ class FrmArticuloNuevoFact extends React.Component {
 					<Button
 						title="Agregar Producto a Detalle"
 						color="#0466C8"
+						/*Carga el articulo seleccionado a la compra, mediante el detalle,
+						la llave primaria y una bandera para saber si se carga el articulo*/
 						onPress={async () => {
 							this.GuardarDetalleCompra(this.DetalleCompra, this.state.LLP, this.ban);
 						}}

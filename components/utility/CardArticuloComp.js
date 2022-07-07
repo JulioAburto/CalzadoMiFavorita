@@ -9,6 +9,7 @@ const CardArticuloComp = (props) => {
 			<Text style={styles.Atribute}>Fecha Registro: {props.data.Fecha_Registro} </Text>
 			<Button
 			color="#0466C8"
+			/* Es un boton terneareo para validar la seleccion del articulo*/
 				onPress={() => {
 					props.seleccion
 						? props.SeleccionArticulo(props.data.Id_Articulo, props.data.Nombre_Articulo)

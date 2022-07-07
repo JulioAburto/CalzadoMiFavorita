@@ -50,7 +50,11 @@ y posteriormente se lo manda al newGuardarCompra */
 			detallecompra: eliminar,
 		});
 	};
-
+	/* Primero pasa la fecha actual, espera para guardar desde el entity,
+	 se hace un forin que recorre todo los detalles que nosotros tenemos
+	  y relacina los detalles con la unica compra que se esta haciendo
+	 y espera que se haga esto para hacer un push a todo por medio del idDetalleCompra,
+	  y luego se carga para su posterior mapeo  */
 	Save = async () => {
 		this.Compra.Fecha_Compra = this.state.fecha;
 

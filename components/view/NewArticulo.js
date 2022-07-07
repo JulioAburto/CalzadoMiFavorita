@@ -15,6 +15,7 @@ class NewArticulo extends React.Component {
 		};
 		this.CargarArticulo = this.props.route.params.CargarArticulo;
 	}
+	/* espera que se carguen o guarden todo los articulos por medio del IdArticulo */
 	GuardarArticulo = async () => {
 		this.ArticuloG.Fecha_Registro = this.state.fechaActual;
 		await this.ArticuloG.Save("Id_Articulo");

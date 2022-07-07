@@ -23,7 +23,7 @@ class ProveedorView extends React.Component {
 		});
 	};
 	/* Manda a pedir el id del proveedor y su nombre
-	Esto es para pode seleccionar el articulo en la factura */
+	Esto es para pode seleccionar el proveedor en la factura */
 	SeleccionProveedor = async (pk, name) => {
 		await this.props.route.params.SeleccionProveedor(pk, name);
 		this.props.navigation.navigate("NewGuardarCompra");

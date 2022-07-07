@@ -8,12 +8,12 @@ class ArticuloView extends React.Component {
 		super();
 		this.props = props;
 		this.state = {
-			isLoading: true,
+			isLoading: true, 
 			Dataset: [],
-			seleccion: this.props.route.params ?? false,
+			seleccion: this.props.route.params ?? false, /* una variable que funcona de forma booleana */
 		};
 		this.Articulo = new Articulo();
-		this.CargarArticulo();
+		this.CargarArticulo(); 
 	}
 	/*Esta funcion carga los articulos, carga todo
 	 los datos que posee al dataset para que se haga el mapeo */
@@ -25,7 +25,7 @@ class ArticuloView extends React.Component {
 		});
 	};
 	/* Esta funcion manda a pedir el id y el nombre del articulo, 
-	para poder seleccionar un articulo a la nueva factura */
+	para poder seleccionar un articulo a la nueva factura, se utiliza para seleccionar los articulos*/
 	SeleccionArticulo = async (llp, nombre) => {
 		this.props.route.params.SeleccionArticulo(llp, nombre);
 		this.props.navigation.navigate("FrmArticuloNuevoFact");
